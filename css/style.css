@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+	--accent-color: rgba(0, 136, 255, 0.9);
+	--content-size: 900px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+input,
+button,
+a {
+	font-family: "Inter Tight", sans-serif;
+
+	margin: 0;
+}
+
+a,
+p,
+input,
+button {
+	font-size: 16px;
+	font-weight: 500;
+}
+
+body,
+.content-constraint {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* background-color: var(--accent-color); */
+}
+
+img {
+	display: block;
+}
+
+header {
+	background-color: var(--accent-color);
+	color: #fff;
+	z-index: 9999;
+	display: flex;
+	width: 100%;
+	box-sizing: border-box;
+	justify-content: center;
+	position: sticky;
+	top: 0;
+	backdrop-filter: saturate(180%) blur(20px);
+	transition: background-color 0.5s, color 0.5s;
+}
+
+header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-top {
+	padding: 16px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-top nav {
+	display: flex;
+	gap: 16px;
+}
+
+.header-top nav a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.content,
+main {
+	width: var(--content-size);
+	max-width: 100vw;
+	padding: 16px;
+	box-sizing: border-box;
+}
+
+.logo-full {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	gap: 4px;
+	width: fit-content;
+}
+
+.mobile-only {
+	display: none;
+}
+
+.header-relaxed {
+	background-color: rgba(0, 0, 0, 0.2);
+	border-bottom: solid 1px rgba(255, 255, 255, 0.2);
+}
+
+.header-relaxed .header-top nav a {
+	color: white;
+}
+
+.header-relaxed .seasweep-logo {
+	animation: breatheDown 0.6s ease-in-out forwards;
+}
+
+.header-relaxed .not-in-relax {
+	animation: fadeOut 0.7s ease-in-out forwards;
+}
+
+@keyframes fadeOut {
+	0% {
+		opacity: 1;
+		margin-bottom: 0px;
+	}
+
+	70% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+		margin-bottom: -23px;
+	}
+}
+
+@keyframes breatheDown {
+	from {
+		max-width: 90px;
+	}
+	to {
+		max-width: 48px;
+	}
+}
+
+@media only screen and (min-width: 1500px) {
+	:root {
+		--content-size: 1400px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	:root {
+		--content-size: 100%;
+	}
+
+	.desktop-only {
+		display: none;
+	}
+
+	.mobile-only {
+		display: block;
+	}
+}
+
+.rootMain {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
