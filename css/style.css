@@ -60,6 +60,11 @@ header a {
 	text-decoration: none;
 }
 
+/* header h1 {
+	margin: 0 !important;
+	padding: 0 !important;
+} */
+
 .header-top {
 	padding: 16px;
 	box-sizing: border-box;
