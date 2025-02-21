@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 :root {
-	--accent-color: rgba(0, 136, 255, 0.9);
-	--accent-contrast-color: rgba(255,255,255,1);
+	--accent-color: #0088ffe6;
+	--accent-color-darker: #0079e3e6;
+	--accent-contrast-color: rgba(255, 255, 255, 1);
 	--content-size: 900px;
 }
 
@@ -31,6 +33,7 @@ input,
 button {
 	font-size: 16px;
 	font-weight: 400;
+	font-family: "Inter", sans-serif;
 }
 
 body,
@@ -136,6 +139,12 @@ button {
 	padding: 16px;
 	border: none;
 	border-radius: 50px;
+	cursor: pointer;
+	transition: background-color 0.2s ease;
+}
+
+button:hover {
+	background-color: var(--accent-color-darker);
 }
 
 @keyframes fadeOut {

@@ -41,3 +41,60 @@
 	gap: 16px;
 	flex-direction: column;
 }
+
+table {
+	width: 100%;
+}
+
+.table-card {
+	padding: 16px;
+	box-sizing: border-box;
+	flex-direction: column;
+	display: flex;
+	gap: 8px;
+}
+
+.table-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px;
+}
+
+.table-row td,
+.table-row td img {
+	width: 400px;
+	height: 400px;
+	object-fit: cover;
+}
+
+.accent-card {
+	background-color: var(--accent-color);
+	color: var(--accent-contrast-color);
+}
+
+@media only screen and (max-width: 600px) {
+	.table-row td,
+	.table-row td img {
+		width: 100%;
+		height: fit-content;
+		object-fit: cover;
+	}
+
+	.table-row img {
+		display: none;
+	}
+
+	.table-row {
+		flex-direction: column;
+	}
+}
+
+.table-information {
+	width: 100% !important;
+	height: fit-content;
+}
+
+.button-link {
+	text-decoration: none;
+	color: var(--accent-contrast-color);
+}
