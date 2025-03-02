@@ -17,8 +17,6 @@
 .video-volunteer .content-constraint {
 	height: 100%;
 	display: flex;
-	background-color: rgba(0, 0, 0, 0.5);
-	backdrop-filter: saturate(180%);
 }
 
 .video-volunteer .content {
@@ -41,8 +39,6 @@
 
 .table-container > div {
 	width: 100%;
-	/* padding-right: 20px;
-	padding-top: 20px; */
 }
 
 main {
