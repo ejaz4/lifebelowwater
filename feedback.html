@@ -1,68 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Feedback</title>
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/feedback.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+		<link rel="preload" href="/js/global.js" type="script" />
+		<link rel="preload" href="/components/header.html" type="fetch" />
+        
     </head>
     <body>
+		<main class="rootMain">
+        <h1 class="formHeader">Feedback Form</h1><br>
+
+        <h2 class="formSubHeader">Required Fields *</h2><br>
+
         <fieldset>
-            <h1>Feedback Form</h1>
-            <h2>Required Fields *</h2>
+
+            <legend>Personal Details</legend>
             <form>
-            <label for="name">* Enter Your Name</label>
-            <input type="text" id="name" name="name" required><br>
+            <label for="name">* Enter Your Full Name</label>
+            <input type="text" id="name" name="name" required oninvalid="this.setCustomValidity('Please enter your name')" oninput="this.setCustomValidity('')"><br><br>
+                      
             <label for="email">* Enter Your Email</label>
-            <input type="email" id="email" name="email" required><br>
-            <p>Was This Your First Time Visiting</p>
-            <input type="radio" id="yes" name="yes">
-            <label for="yes">Yes</label>
-            <input type="radio" id="no" name="no">
-            <label for="no">No</label>
-            <p>Was This Website Informative and Easy to Navigate Through?</p>
-            <input type="radio" id="yes2" name="yes2">
-            <label for="yes2">Yes</label>
-            <input type="radio" id="no2" name="no2">
-            <label for="no2">No</label>
-            <p>* If "No", suggest any improvements for the future</p>
-            <textarea id="improvements" name="improvements" rows="4" cols="50" required>
-                Add your messages here
-            </textarea><br>
-            <label for="satisfy">How satisfied are you with our services? Choose from 1-10 with 1 being "Not satisfied at all" and 10 being "Extremely satisfied"</label><br><br>
-            <input type="radio" id="1" name="1">
-            <label for="1">1</label>            
-            <input type="radio" id="2" name="2">
-            <label for="2">2</label>      
-            <input type="radio" id="3" name="3">
-            <label for="3">3</label>                  
-            <input type="radio" id="4" name="4">
-            <label for="4">4</label>      
-            <input type="radio" id="5" name="5">
-            <label for="5">5</label>                  
-            <input type="radio" id="6" name="6">
-            <label for="6">6</label>                  
-            <input type="radio" id="7" name="7">
-            <label for="7">7</label>      
-            <input type="radio" id="8" name="8">
-            <label for="8">8</label>      
-            <input type="radio" id="9" name="9">
-            <label for="9">9</label>      
-            <input type="radio" id="10" name="10">
-            <label for="10">10</label>
-            <p>Would you recommend our services?</p>
-            <input type="radio" id="yes3" name="yes3">
-            <label for="yes3">Yes</label>
-            <input type="radio" id="no3" name="no3">
-            <label for="no3">No</label><br><br>    
-            <label for="updates">* Would you like to receive updates about the website and any offers</label>
-            <select name="updates" id="updates">
-                <option value="email">Yes - via email</option>
-                <option value="text">Yes - via text</option>
-                <option value="text">No</option>
+            <input type="email" id="email" name="email" required oninvalid="this.setCustomValidity('Please enter a valid email address')" oninput="this.setCustomValidity('')"><br><br>
+                       
+            <label for="tel">* Enter Your Telephone Number</label>
+            <input type="tel" id="tel" name="tel" required oninvalid="this.setCustomValidity('Please enter a valid phone number')" oninput="this.setCustomValidity('')"><br><br>
+
+            <label for="address1">* Address Line 1</label>
+            <input type="text" id="address1" name="address1" required  oninvalid="this.setCustomValidity('Please enter your address')" oninput="this.setCustomValidity('')"><br><br>
+
+            <label for="address2">* Address Line 2</label>
+            <input type="text" id="address2" name="address2" required><br><br>
+    
+            <label for="address3">* City</label>
+            <input type="text" id="address3" name="address3" required oninvalid="this.setCustomValidity('Please enter your city')" oninput="this.setCustomValidity('')"><br><br>
+
+            <label for="address4">* ZIP / Postal Code</label>
+            <input type="text" id="address4" name="address4" required oninvalid="this.setCustomValidity('Please enter your postal code')" oninput="this.setCustomValidity('')"><br><br>
+
+            <label for="address5">* Country</label>
+            <select name="address5" id="address5" required oninvalid="this.setCustomValidity('Please select your country')">
+                <option value="uk">United Kingdom</option>
+                <option value="us">United States</option>
+                <option value="spa">Spain</option>
+                <option value="fra">France</option>
+                <option value="chi">China</option>
+                <option value="rus">Russia</option>
+                <option value="pol">Poland</option>
+                <option value="ger">Germany</option>
+                <option value="por">Portugal</option>
+                <option value="jap">Japan</option>
+                <option value="sok">South Korea</option>
+                <option value="ind">India</option>
+                <option value="bra">Brazil</option>
             </select><br><br>
-            <p>Do you have any additional questions or requests?</p>
-            <textarea id="questions" name="questions" rows="4" cols="50" required>
-                Add your messages here
-            </textarea><br>
+
+            <label for="chars">* What materials do you recycle? (Select multiple if it applies)</label><br><br>
+            <select name="recycling" id="recycling" multiple required  oninvalid="this.setCustomValidity('Please select an option')">
+                <option value="plastic">Plastic</option>
+                <option value="glass">Glass</option>
+                <option value="metal">Metal</option>
+                <option value="paper">Paper</option>
+                <option value="cardboard">Cardboard</option>
+                <option value="metal">Metal</option>
+                <option value="batteries">Batteries</option>
+                <option value="electronics">Electronics</option>
+                <option value="textiles">Textiles</option>
+                <option value="none">None</option>
+            </select><br><br>
+
+            <label for="date">When did you last recycle?</label>
+            <input type="datetime-local" id="date" name="date"><br><br>
+
+            <label for="file">Attach a photo of your recycling!</label><br><br>
+            <input type="file" id="file" name="file" accept=".png, .jpg, .jpeg"><br><br>
+
+        </fieldset>
+        <fieldset>
+            <legend>Feedback Details</legend>
+
+            <label for="firstTime">Was This Your First Time Visiting?</label><br>
+            <input type="radio" id="yes" name="firstTime">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="firstTime">
+            <label for="no">No</label><br><br>
+                        
+            <label for="nav">* Was This Website Informative and Easy to Navigate Through?</label><br>
+            <input type="radio" id="yes2" name="nav" required  oninvalid="this.setCustomValidity('Please select an option')" oninput="this.setCustomValidity('')">
+            <label for="yes2">Yes</label>
+            <input type="radio" id="no2" name="nav">
+            <label for="no2">No</label><br><br>
+                        
+            <label for="improvements">* If "No", suggest any improvements for the future</label><br><br>
+            <textarea id="improvements" name="improvements" rows="4" cols="50" required maxlength="200" placeholder="Add your messages here (Max 200 chars)"  oninvalid="this.setCustomValidity('Please dont leave this area blank')" oninput="this.setCustomValidity('')"></textarea><br>
+        
+            <div class="rating">
+            <br><label for="rating">* How satisfied are you with our services?</label><br><br>
+            <i class="fa solid fa-star"></i>
+            <i class="fa solid fa-star"></i>
+            <i class="fa solid fa-star"></i>
+            <i class="fa solid fa-star"></i>
+            <i class="fa solid fa-star"></i>
+            </div>
+            <br><br><label for="recommend">Would you recommend our website?</label><br>
+            <input type="radio" id="yes3" name="recommend">
+            <label for="yes3">Yes</label>
+            <input type="radio" id="no3" name="recommend">
+            <label for="no3">No</label><br><br>    
+
+            <label for="updates">Would you like to receive updates about the website and any offers? (Tick all that apply) </label><br>
+            <input type="checkbox" id="yesEmail" name="updates" value="yesEmail">
+            <label for="yesEmail">Yes - via email</label><br>
+            <input type="checkbox" id="yesText" name="updates" value="yesText">
+            <label for="yesText">Yes - via text</label><br><br>
+
+            <label for="questions">Do you have any additional questions or requests?</label><br><br>
+
+            <textarea id="questions" name="questions" rows="4" cols="50" required maxlength="200" placeholder="Add your messages here (Max 200 chars)" oninvalid="this.setCustomValidity('Please dont leave this area blank')" oninput="this.setCustomValidity('')"></textarea><br>
+
             <input type="submit" value="Submit">
+
             </form>
         </fieldset>
+        </main>
     </body>
+    <script src="/js/global.js"></script>
+</html>

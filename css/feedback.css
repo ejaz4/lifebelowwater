@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(45deg, aqua, dodgerblue);
+}
+
+fieldset {
+    text-align: center;
+    background-color: mediumturquoise;
+    border-radius: 100px;
+    border: none;
+}
+
+legend {
+    font-size: 30px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.formHeader {
+    font-size: 80px;
+    text-align: center;
+}
+
+.formSubHeader {
+    font-size: 50px;
+    color: red;
+    text-align: center;
+}
+
+label {
+    font-size: 20px;
+}
+
+.rating {
+    align-items: center;
+}
+
+.rating i {
+    color: lightblue;
+    cursor: pointer;
+    font-size: 50px;
+    padding: 10px;
+}
+
+input:invalid {
+    background-color: lightcoral;
+}
+
+input:valid {
+    background-color: lightgreen;
+}
