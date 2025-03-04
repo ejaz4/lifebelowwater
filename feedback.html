@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Feedback</title>
+    </head>
+    <body>
+        <fieldset>
+            <h1>Feedback Form</h1>
+            <h2>Required Fields *</h2>
+            <form>
+            <label for="name">* Enter Your Name</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">* Enter Your Email</label>
+            <input type="email" id="email" name="email" required><br>
+            <p>Was This Your First Time Visiting</p>
+            <input type="radio" id="yes" name="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="no">
+            <label for="no">No</label>
+            <p>Was This Website Informative and Easy to Navigate Through?</p>
+            <input type="radio" id="yes2" name="yes2">
+            <label for="yes2">Yes</label>
+            <input type="radio" id="no2" name="no2">
+            <label for="no2">No</label>
+            <p>* If "No", suggest any improvements for the future</p>
+            <textarea id="improvements" name="improvements" rows="4" cols="50" required>
+                Add your messages here
+            </textarea><br>
+            <label for="satisfy">How satisfied are you with our services? Choose from 1-10 with 1 being "Not satisfied at all" and 10 being "Extremely satisfied"</label><br><br>
+            <input type="radio" id="1" name="1">
+            <label for="1">1</label>            
+            <input type="radio" id="2" name="2">
+            <label for="2">2</label>      
+            <input type="radio" id="3" name="3">
+            <label for="3">3</label>                  
+            <input type="radio" id="4" name="4">
+            <label for="4">4</label>      
+            <input type="radio" id="5" name="5">
+            <label for="5">5</label>                  
+            <input type="radio" id="6" name="6">
+            <label for="6">6</label>                  
+            <input type="radio" id="7" name="7">
+            <label for="7">7</label>      
+            <input type="radio" id="8" name="8">
+            <label for="8">8</label>      
+            <input type="radio" id="9" name="9">
+            <label for="9">9</label>      
+            <input type="radio" id="10" name="10">
+            <label for="10">10</label>
+            <p>Would you recommend our services?</p>
+            <input type="radio" id="yes3" name="yes3">
+            <label for="yes3">Yes</label>
+            <input type="radio" id="no3" name="no3">
+            <label for="no3">No</label><br><br>    
+            <label for="updates">* Would you like to receive updates about the website and any offers</label>
+            <select name="updates" id="updates">
+                <option value="email">Yes - via email</option>
+                <option value="text">Yes - via text</option>
+                <option value="text">No</option>
+            </select><br><br>
+            <p>Do you have any additional questions or requests?</p>
+            <textarea id="questions" name="questions" rows="4" cols="50" required>
+                Add your messages here
+            </textarea><br>
+            <input type="submit" value="Submit">
+            </form>
+        </fieldset>
+    </body>
