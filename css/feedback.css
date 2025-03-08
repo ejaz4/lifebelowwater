@@ -26,12 +26,17 @@ legend {
     text-align: center;
 }
 
+select:hover, .imginput {
+    background-color: darkcyan;
+}
+
 label {
     font-size: 20px;
 }
 
 .rating {
     align-items: center;
+    direction: rtl;
 }
 
 .rating i {
@@ -41,10 +46,33 @@ label {
     padding: 10px;
 }
 
-input:invalid {
+.rating > i {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+  }
+  .rating > i:hover:before,
+  .rating > i:hover ~ i:before {
+     color: gold;
+  }
+
+.mainForm input:invalid {
     background-color: lightcoral;
 }
 
-input:valid {
+.mainForm input:valid {
     background-color: lightgreen;
+}
+
+.submit {
+    background-color:deepskyblue;
+    font-size: 24px;
+    border-radius: 10px;
+    padding: 12px 70px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: mediumslateblue;
 }
