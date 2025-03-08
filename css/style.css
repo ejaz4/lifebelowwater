@@ -129,7 +129,8 @@ main {
 	animation: fadeOut 0.7s ease-in-out forwards;
 }
 
-button {
+button,
+.button-link {
 	display: flex;
 	justify-content: center;
 	gap: 8px;
@@ -143,7 +144,8 @@ button {
 	transition: background-color 0.2s ease;
 }
 
-button:hover {
+button:hover,
+.button-link:hover {
 	background-color: var(--accent-color-darker);
 }
 
