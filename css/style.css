@@ -23,7 +23,7 @@ input,
 button,
 a {
 	font-family: "Inter Tight", sans-serif;
-	color: black;
+	/* color: black; */
 	margin: 0;
 }
 
