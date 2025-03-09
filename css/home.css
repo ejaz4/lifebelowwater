@@ -42,8 +42,12 @@
 	flex-direction: column;
 }
 
-table {
+table,
+tbody {
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 
 .table-card {
@@ -72,6 +76,12 @@ table {
 	color: var(--accent-contrast-color);
 }
 
+@media only screen and (max-width: 1500px) {
+	.secondary-image {
+		display: none;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.table-row td,
 	.table-row td img {
@@ -80,7 +90,8 @@ table {
 		object-fit: cover;
 	}
 
-	.table-row img {
+	.table-row img,
+	.image-cell {
 		display: none;
 	}
 
