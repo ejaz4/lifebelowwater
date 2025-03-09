@@ -3,30 +3,73 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Validation - ST3</title>
+		<title>Seasweep</title>
 
+		<!-- This is to preload the header to prevent cumulative layout shift: https://developer.mozilla.org/en-US/docs/Glossary/CLS -->
 		<link rel="preload" href="/js/global.js" as="script" />
 		<link rel="preload" href="/components/header.html" as="fetch" />
 
+		<!-- Mandatory link, this is for the global styles that is used by the header and everything else -->
 		<link rel="stylesheet" href="/css/style.css" />
-		<link rel="stylesheet" href="/css/validation_ST3.css" />
+
+		<!-- Change /css/template.css to a new css file you've just made -->
+		<link rel="stylesheet" href="/css/pageEditor_ST3.css" />
 	</head>
 	<body>
-		<main class="rootMain">
-			<h1>Validation Page - Student 3</h1>
-			<section id="feedback">
-				<h2>Feedback Page</h2>
-				<img src="images/st3valid1.png">
-			</section>
-			<section id="team">
-				<h2>Team Page</h2>
-				<img src="images/st3valid2.png">
-			</section>
-			<section id="content">
-				<h2>Content Page</h2>
-				<img src="images/st3valid3.png">
-			</section>
-		</main>
+		<!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+		<section class="stud">
+			<h2>Jack Connolly - Student 3</h2>
+		</section>
+
+		<div class="container">
+			<!-- Main content area -->
+			<main class="rootMain">
+				<!-- Update those first three sections for the pages you were responsible to implement -->
+
+				<section>
+					<h2 id="feedback">Feedback Page</h2>
+					<h3>Technical Description</h3>
+					<p>Initially ran into some errors with labels but after correcting the ids errors were fixed. My fieldset and form tags were also initally in the wrong order which was then amended</p>
+					<img src="images/st3valid1.png">
+					<h3>Link back to page editor</h3>
+					<p><a href="pageEditor_ST3.html#feedback">Link</a></p>
+				</section>
+				<section>
+					<h2 id="team">Team Page</h2>
+					<h3>Technical Description</h3>
+					<p>Ran into no errors with the team page, came out clean </p>
+					<img src="images/st3valid2.png">
+					<h3>Link back to page editor</h3>
+					<p><a href="pageEditor_ST3.html#team">Link</a></p>
+				</section>
+				<section>
+					<h2 id="content">Content Page</h2>
+					<h3>Technical Description</h3>
+					<p>Ran into an error with having p tags with an unordered list so changed them to li tags and formatted them to be like how the paragraphs were before. </p>
+					<img src="images/st3valid3.png">
+					<h3>Link back to page editor</h3>
+					<p><a href="pageEditor_ST3.html#content">Link</a></p>
+				</section>
+				<p class="top"><a href="#top">Go top</a></p>
+			</main>
+
+			<!-- Sidebar area -->
+			<aside>
+				<h3>Core pages developed:</h3>
+
+				<!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+				<ul class="top-level-ul">
+					<!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+					<li>Student 3</li>
+					<ul>
+						<li><a href="#feedback">Feedback page validation</a></li>
+						<li><a href="#team">Team page validation</a></li>
+						<li><a href="#content">Content page validation</a></li>
+					</ul>
+				</ul>
+			</aside>
+		</div>
+
 		<script src="/js/global.js"></script>
 	</body>
 </html>
