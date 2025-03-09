@@ -227,6 +227,7 @@ button:hover,
 		position: fixed;
 		flex-direction: column;
 		gap: 4px;
+		-webkit-backdrop-filter: blur(20px) saturate(180%);
 		backdrop-filter: saturate(180%) blur(20px);
 		transition: top 0.3s ease-in-out, background-color 0.5s;
 		border-bottom-left-radius: 12px;
@@ -253,6 +254,7 @@ button:hover,
 	background-color: white !important;
 	color: var(--accent-color) !important;
 }
+
 footer {
 	background-color: rgba(0, 0, 0, 0.1);
 	color: black;
