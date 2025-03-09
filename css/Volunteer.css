@@ -95,3 +95,11 @@ details {
 		flex-direction: column;
 	}
 }
+
+.img-container {
+	display: flex;
+	gap: 20px;
+}
+
+.img-container > div {
+}
