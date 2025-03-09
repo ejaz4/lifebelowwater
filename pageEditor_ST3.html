@@ -42,59 +42,64 @@
                         <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                     <h3>Link to the page</h3>
-                        <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
+                    <p><a href="feedback.html">Link</a></p>
             </section>
 
             <section>
                 <h2 id="team">Team Page</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
-
+                        <p>The team page uses img tags to show images of everyone on the team as well as heading tags to show their name and p tags to give a brief description of the highlighted member. Div tags are used to organise the website into sections so specific aspects can be managed at a time. Tabindex is used so that the images can be accessed by hovering over images but also by using the tab key.</p>
+                        <p>Majority of the team page is made using CSS rather than html. Images are given the transition attribute to control aspects such as their opacity and size so it can be changed later when hovering over the images allowing me to control the rate at which it changes rather than it being immediate. When hovering over an image, the image is enlarged and given a border to highlight it as well as changing its opacity to make it clear which member you are looking at. The div class for the description also changes from being invisible to being visible on hover to give more information about the selected member</p> 
+                        <p>Margin properties are used to ensure that when the images are enlarged no formatting issues occur and keeps the website functional.</p>
                     <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                        <p>By highlighting images via means such as borders and enlarging images it makes the website easier to use as users can easily tell which user they are currently looking at. Furthermore, by using tabindex more people are able to use the website regardless of hardware requirements.</p>
 
                     <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
                         <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                         
                     <h3>Link to the page</h3>
-                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+                    <p><a href="team.html">Link</a></p>
             </section>
 
             <section>
                 <h2 id="content">Content Page</h2>
                     <h3>Technical Description</h3>
-                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+                        <p>The content page is divided into sections to allow for each to be given an id to use in navigation. The page features an aside section to create a sidebar with a fixed position so it will always be visible to users screens and allow them to navigate through the website with ease. The website also features a button with a fixed button that when clicked allows for the users to go back to the top of the website at any time. Each section is given a header to inform users of what each section is about while being given a paragraph of information with an image to accompany the header. Unordered lists are used to make lists such as targets and aims for better formatting and make it easier for the user to see by making each bullet point bold. </p>
+                        <p>Images are displayed in block with an auto margin to allow for them to be in the center of the page. The aside section is given the text-decoration:none attribute so that even when clicking the sidebar it will appear the same and appear much better than changing colour since the sidebar is intended to be frequently used.</p> 
 
                     <h3>Accessibility</h3>
-                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+                        <p>The navigation sidebar is intended to help users navigate through the website and allow them to immediately go to the section they want to. The "back to top" button servers the same purpose where it allows users to return to the beginning of the webpage whenever they want to improve user experience and make navigation easier.</p>
 
                     <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
                         <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
                         
                     <h3>Link to the page</h3>
-                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+                        <p><a href="content_ST3.html">Link</a></p>
             </section>
 
             <section>
                 <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+                    <p>Challenges faced during the implementation process include how during the making of the feedback page I had to learn certain attribute tags to customise the form how I wanted to. For example, having to learn setCustomValidity to allow for custom error messages to better inform the user or learning how to format the postcode by customising the text input in the field. One of the biggest challenges came with the star system as html has no way to acknowledge successive elements so initially I had no clue how to make the star system. Upon doing some research I found out html can identify previous elements using the :before element and you are able to reverse elements using the direction attribute. By using these 2 attributes I was able to reverse the star order so instead of going 1 2 3 4 5 it goes 5 4 3 2 1 and works as a functioning star rating system when hovered over.</p>
+                    <p>For the team page, initially aligning the images how I wanted them to be was a challenge but via using the margin and display properties correct I was able to arrange them in a way I was happy with. At the start I wasn't familiar with how to make the text appear on hover so I had to learn how to use the visibility attribute and hover attribute to get the desired effects when making the page. Lastly, I had no idea how to make the images change properties in a appealing fashion rather than just having them change immedidately, so afterwards I found the transition property and found that you could assign certain attributes that would change according to an assigned timeframe e.g 0.5s which allowed me to do much more visually appealing changes to the images when hovered over. </p> 
+                    <p>For the content page the biggest challenge faced was making the navigation bar. I knew how to use href and ids to make navigation throughout the site but creating the sidebar with the correct formatting proved to be difficult. I looked online for other people who had made sidebars and saw the css they used to format it then was able to take that and create my own sidebar which was fully functional and allowed for navigation throughout the site.</p>
             </section>
 
             <section>
                 <h2 id="compliance"> Compliance</h2>
-                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
+                    <p>All the webpages created contain no offensive material and images of people are used with given consent. No illegal access to services is granted nor facilities. No advertisements of any kind are present on the site. Most videos are from free stock footage sites however some images may cause copyright infringement due to being pulled from the internet.</p> 
 
                     
             </section>
 
             <section>
                 <h2 id="ref">References</h2>
-                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
                     <ul class="ref">
-                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
-                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                        <li>Stack Overflow (2025) <i>Stack Overflow.</i> Available at: <a href="#https://stackoverflow.com/questions">https://stackoverflow.com/questions</a> (Last accessed: 01 March 2025).</li>
+                        <li>W3Schools (2025) <i>W3Schools</i> Available at: <a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a> (Last accessed 02 March 2025)</li>
+                        <li>Developer Mozilla (2025) <i>Developer Mozilla</i> Available at: <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started">https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started</a> (Last accessed 02 March 2025)</li>
+                        <li>GeeksForGeeks (2025) <i>GeeksForGeeks</i> Available at: <a href="https://www.geeksforgeeks.org/html-tutorial/?ref=shm">https://www.geeksforgeeks.org/html-tutorial/?ref=shm</a> (Last accessed 02 March 2025)</li>
                     </ul>
             </section>
 

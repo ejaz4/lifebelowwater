@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(45deg, aqua, dodgerblue);
+}
+
+main h1 {
+    text-align: center;
+    background-color: lightseagreen;
+    padding: 30px;
+    border-radius: 30px;
+    border: 4px solid black;
+}
+
+main h2 {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;  
+}

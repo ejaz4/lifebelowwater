@@ -30,7 +30,7 @@ select:hover, .imginput {
     background-color: darkcyan;
 }
 
-label {
+label, p {
     font-size: 20px;
 }
 
@@ -119,4 +119,8 @@ label {
 	align-items: center;
 	gap: 16px;
 	flex-direction: column;
+}
+
+.content-constraint h2{
+    font-size: 100px;
 }
