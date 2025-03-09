@@ -14,118 +14,325 @@
 
 		<!-- Change /css/template.css to a new css file you've just made -->
 		<link rel="stylesheet" href="/css/pageEditor_ST3.css" />
-</head>
-<body>
-    
-    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
-    <section class="stud">
-        <h2>Jack Connolly - Student 3</h2>
-    </section>
+	</head>
+	<body>
+		<!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+		<section class="stud">
+			<h2>Jack Connolly - Student 3</h2>
+		</section>
 
-    <div class="container">
-        <!-- Main content area -->
-        <main class="rootMain">
+		<div class="container">
+			<!-- Main content area -->
+			<main class="rootMain">
+				<!-- Update those first three sections for the pages you were responsible to implement -->
 
-            <!-- Update those first three sections for the pages you were responsible to implement -->
+				<section>
+					<h2 id="feedback">Feedback Page</h2>
+					<h3>Technical Description</h3>
+					<p>
+						The feedback page features a large form that users can
+						give information to and submit to the website. It uses
+						the input tags to create fields for users to give
+						information to. It also uses input type = to determine
+						what kind of input should be given to the form, for
+						example fields such as name use input type = "name"
+						whereas others such as phone number use input type =
+						"tel". This is to ensure that users can only submit
+						desired information in the given fields.
+					</p>
+					<p>
+						The fields each use setCustomValidity to allow for
+						custom error messages to better inform the user of what
+						they need to do when they haven't provided valid
+						information such as telling the user to insert their
+						full name or give a valid zip code. Certain fields are
+						given the required attribute to make sure that the user
+						cannot submit the form without filling out specific
+						fields that are needed. To better inform the user of
+						what information is needed in each field the label tag
+						is used to provide a description of the input field to
+						tell the user what information to give.
+					</p>
+					<p>
+						The form features drop down menus and select menus with
+						preselected options for users to choose from as well as
+						a file select button giving them the ability to submit a
+						.png .jpg or .jpeg file
+					</p>
+					<p>
+						Buttons such as submit have the css attribute
+						cursor:pointer to make it so when hovered the cursor
+						will change. Input fields are given criteria such as
+						input:valid and input:invalid to change the field based
+						on whether the given input is valid or not to help users
+						fill out the form.
+					</p>
+					<h3>Accessibility</h3>
+					<p>
+						Required fields are marked with an * to inform the users
+						of what fields need to be filled out. Invalid fields are
+						coloured red and change to green upon giving a valid
+						input. Fields such as zip code have formatting to ensure
+						users can only provide a valid zip code to the field.
+						All fields are given an input type to control what users
+						can submit as well as their name allowing for cached
+						information to be autofilled and submitted from users'
+						browsers. Each question is laid out separately to allow
+						for easier user experience
+					</p>
 
-            <section>
-                <h2 id="feedback">Feedback Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>The feedback page features a large form that users can give information to and submit to the website. It uses the input tags to create fields for users to give information to. It also uses input type = to determine what kind of input should be given to the form, for example fields such as name use input type = "name" whereas others such as phone number use input type = "tel". This is to ensure that users can only submit desired information in the given fields.</p> 
-                        <p>The fields each use setCustomValidity to allow for custom error messages to better inform the user of what they need to do when they haven't provided valid information such as telling the user to insert their full name or give a valid zip code. Certain fields are given the required attribute to make sure that the user cannot submit the form without filling out specific fields that are needed. To better inform the user of what information is needed in each field the label tag is used to provide a description of the input field to tell the user what information to give.</p>
-                        <p>The form features drop down menus and select menus with preselected options for users to choose from as well as a file select button giving them the ability to submit a .png .jpg or .jpeg file</p>
-                        <p>Buttons such as submit have the css attribute cursor:pointer to make it so when hovered the cursor will change. Input fields are given criteria such as input:valid and input:invalid to change the field based on whether the given input is valid or not to help users fill out the form.</p>
-                        <h3>Accessibility</h3>
-                        <p>Required fields are marked with an * to inform the users of what fields need to be filled out. Invalid fields are coloured red and change to green upon giving a valid input. Fields such as zip code have formatting to ensure users can only provide a valid zip code to the field. All fields are given an input type to control what users can submit as well as their name allowing for cached information to be autofilled and submitted from users' browsers. Each question is laid out separately to allow for easier user experience</p>
-                    
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+					<h3>Link to the validation page</h3>
+					<!-- Update the path to link the Page Editor with the splash page -->
+					<p>
+						<a href="validation_ST0.html#splashVal"
+							>Include a link to the validation page</a
+						>, use the marker to jump to the corresponding section
+						of the validation page.
+					</p>
+					<!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-                    <h3>Link to the page</h3>
-                    <p><a href="feedback.html">Link</a></p>
-            </section>
+					<h3>Link to the page</h3>
+					<p><a href="feedback.html">Link</a></p>
+				</section>
 
-            <section>
-                <h2 id="team">Team Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>The team page uses img tags to show images of everyone on the team as well as heading tags to show their name and p tags to give a brief description of the highlighted member. Div tags are used to organise the website into sections so specific aspects can be managed at a time. Tabindex is used so that the images can be accessed by hovering over images but also by using the tab key.</p>
-                        <p>Majority of the team page is made using CSS rather than html. Images are given the transition attribute to control aspects such as their opacity and size so it can be changed later when hovering over the images allowing me to control the rate at which it changes rather than it being immediate. When hovering over an image, the image is enlarged and given a border to highlight it as well as changing its opacity to make it clear which member you are looking at. The div class for the description also changes from being invisible to being visible on hover to give more information about the selected member</p> 
-                        <p>Margin properties are used to ensure that when the images are enlarged no formatting issues occur and keeps the website functional.</p>
-                    <h3>Accessibility</h3>
-                        <p>By highlighting images via means such as borders and enlarging images it makes the website easier to use as users can easily tell which user they are currently looking at. Furthermore, by using tabindex more people are able to use the website regardless of hardware requirements.</p>
+				<section>
+					<h2 id="team">Team Page</h2>
+					<h3>Technical Description</h3>
+					<p>
+						The team page uses img tags to show images of everyone
+						on the team as well as heading tags to show their name
+						and p tags to give a brief description of the
+						highlighted member. Div tags are used to organise the
+						website into sections so specific aspects can be managed
+						at a time. Tabindex is used so that the images can be
+						accessed by hovering over images but also by using the
+						tab key.
+					</p>
+					<p>
+						Majority of the team page is made using CSS rather than
+						html. Images are given the transition attribute to
+						control aspects such as their opacity and size so it can
+						be changed later when hovering over the images allowing
+						me to control the rate at which it changes rather than
+						it being immediate. When hovering over an image, the
+						image is enlarged and given a border to highlight it as
+						well as changing its opacity to make it clear which
+						member you are looking at. The div class for the
+						description also changes from being invisible to being
+						visible on hover to give more information about the
+						selected member
+					</p>
+					<p>
+						Margin properties are used to ensure that when the
+						images are enlarged no formatting issues occur and keeps
+						the website functional.
+					</p>
+					<h3>Accessibility</h3>
+					<p>
+						By highlighting images via means such as borders and
+						enlarging images it makes the website easier to use as
+						users can easily tell which user they are currently
+						looking at. Furthermore, by using tabindex more people
+						are able to use the website regardless of hardware
+						requirements.
+					</p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+					<h3>Link to the validation page</h3>
+					<!-- Update the path to link the Page Editor with the splash page -->
+					<p>
+						<a href="validation_ST0.html#volunteerVal"
+							>Include a link to the validation page</a
+						>, use the marker to jump to the corresponding section
+						of the validation page.
+					</p>
+					<!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-                        
-                    <h3>Link to the page</h3>
-                    <p><a href="team.html">Link</a></p>
-            </section>
+					<h3>Link to the page</h3>
+					<p><a href="team.html">Link</a></p>
+				</section>
 
-            <section>
-                <h2 id="content">Content Page</h2>
-                    <h3>Technical Description</h3>
-                        <p>The content page is divided into sections to allow for each to be given an id to use in navigation. The page features an aside section to create a sidebar with a fixed position so it will always be visible to users screens and allow them to navigate through the website with ease. The website also features a button with a fixed button that when clicked allows for the users to go back to the top of the website at any time. Each section is given a header to inform users of what each section is about while being given a paragraph of information with an image to accompany the header. Unordered lists are used to make lists such as targets and aims for better formatting and make it easier for the user to see by making each bullet point bold. </p>
-                        <p>Images are displayed in block with an auto margin to allow for them to be in the center of the page. The aside section is given the text-decoration:none attribute so that even when clicking the sidebar it will appear the same and appear much better than changing colour since the sidebar is intended to be frequently used.</p> 
+				<section>
+					<h2 id="content">Content Page</h2>
+					<h3>Technical Description</h3>
+					<p>
+						The content page is divided into sections to allow for
+						each to be given an id to use in navigation. The page
+						features an aside section to create a sidebar with a
+						fixed position so it will always be visible to users
+						screens and allow them to navigate through the website
+						with ease. The website also features a button with a
+						fixed button that when clicked allows for the users to
+						go back to the top of the website at any time. Each
+						section is given a header to inform users of what each
+						section is about while being given a paragraph of
+						information with an image to accompany the header.
+						Unordered lists are used to make lists such as targets
+						and aims for better formatting and make it easier for
+						the user to see by making each bullet point bold.
+					</p>
+					<p>
+						Images are displayed in block with an auto margin to
+						allow for them to be in the center of the page. The
+						aside section is given the text-decoration:none
+						attribute so that even when clicking the sidebar it will
+						appear the same and appear much better than changing
+						colour since the sidebar is intended to be frequently
+						used.
+					</p>
 
-                    <h3>Accessibility</h3>
-                        <p>The navigation sidebar is intended to help users navigate through the website and allow them to immediately go to the section they want to. The "back to top" button servers the same purpose where it allows users to return to the beginning of the webpage whenever they want to improve user experience and make navigation easier.</p>
+					<h3>Accessibility</h3>
+					<p>
+						The navigation sidebar is intended to help users
+						navigate through the website and allow them to
+						immediately go to the section they want to. The "back to
+						top" button servers the same purpose where it allows
+						users to return to the beginning of the webpage whenever
+						they want to improve user experience and make navigation
+						easier.
+					</p>
 
-                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
-                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+					<h3>Link to the validation page</h3>
+					<!-- Update the path to link the Page Editor with the splash page -->
+					<p>
+						<a href="validation_ST0.html#contentVal"
+							>Include a link to the validation page</a
+						>, use the marker to jump to the corresponding section
+						of the validation page.
+					</p>
+					<!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
 
-                        
-                    <h3>Link to the page</h3>
-                        <p><a href="content_ST3.html">Link</a></p>
-            </section>
+					<h3>Link to the page</h3>
+					<p><a href="content_ST3.html">Link</a></p>
+				</section>
 
-            <section>
-                <h2 id="challenge"> Challenges and Lessons Learned</h2>
-                    <p>Challenges faced during the implementation process include how during the making of the feedback page I had to learn certain attribute tags to customise the form how I wanted to. For example, having to learn setCustomValidity to allow for custom error messages to better inform the user or learning how to format the postcode by customising the text input in the field. One of the biggest challenges came with the star system as html has no way to acknowledge successive elements so initially I had no clue how to make the star system. Upon doing some research I found out html can identify previous elements using the :before element and you are able to reverse elements using the direction attribute. By using these 2 attributes I was able to reverse the star order so instead of going 1 2 3 4 5 it goes 5 4 3 2 1 and works as a functioning star rating system when hovered over.</p>
-                    <p>For the team page, initially aligning the images how I wanted them to be was a challenge but via using the margin and display properties correct I was able to arrange them in a way I was happy with. At the start I wasn't familiar with how to make the text appear on hover so I had to learn how to use the visibility attribute and hover attribute to get the desired effects when making the page. Lastly, I had no idea how to make the images change properties in a appealing fashion rather than just having them change immedidately, so afterwards I found the transition property and found that you could assign certain attributes that would change according to an assigned timeframe e.g 0.5s which allowed me to do much more visually appealing changes to the images when hovered over. </p> 
-                    <p>For the content page the biggest challenge faced was making the navigation bar. I knew how to use href and ids to make navigation throughout the site but creating the sidebar with the correct formatting proved to be difficult. I looked online for other people who had made sidebars and saw the css they used to format it then was able to take that and create my own sidebar which was fully functional and allowed for navigation throughout the site.</p>
-            </section>
+				<section>
+					<h2 id="challenge">Challenges and Lessons Learned</h2>
+					<p>
+						Challenges faced during the implementation process
+						include how during the making of the feedback page I had
+						to learn certain attribute tags to customise the form
+						how I wanted to. For example, having to learn
+						setCustomValidity to allow for custom error messages to
+						better inform the user or learning how to format the
+						postcode by customising the text input in the field. One
+						of the biggest challenges came with the star system as
+						html has no way to acknowledge successive elements so
+						initially I had no clue how to make the star system.
+						Upon doing some research I found out html can identify
+						previous elements using the :before element and you are
+						able to reverse elements using the direction attribute.
+						By using these 2 attributes I was able to reverse the
+						star order so instead of going 1 2 3 4 5 it goes 5 4 3 2
+						1 and works as a functioning star rating system when
+						hovered over.
+					</p>
+					<p>
+						For the team page, initially aligning the images how I
+						wanted them to be was a challenge but via using the
+						margin and display properties correct I was able to
+						arrange them in a way I was happy with. At the start I
+						wasn't familiar with how to make the text appear on
+						hover so I had to learn how to use the visibility
+						attribute and hover attribute to get the desired effects
+						when making the page. Lastly, I had no idea how to make
+						the images change properties in a appealing fashion
+						rather than just having them change immedidately, so
+						afterwards I found the transition property and found
+						that you could assign certain attributes that would
+						change according to an assigned timeframe e.g 0.5s which
+						allowed me to do much more visually appealing changes to
+						the images when hovered over.
+					</p>
+					<p>
+						For the content page the biggest challenge faced was
+						making the navigation bar. I knew how to use href and
+						ids to make navigation throughout the site but creating
+						the sidebar with the correct formatting proved to be
+						difficult. I looked online for other people who had made
+						sidebars and saw the css they used to format it then was
+						able to take that and create my own sidebar which was
+						fully functional and allowed for navigation throughout
+						the site.
+					</p>
+				</section>
 
-            <section>
-                <h2 id="compliance"> Compliance</h2>
-                    <p>All the webpages created contain no offensive material and images of people are used with given consent. No illegal access to services is granted nor facilities. No advertisements of any kind are present on the site. Most videos are from free stock footage sites however some images may cause copyright infringement due to being pulled from the internet.</p> 
+				<section>
+					<h2 id="compliance">Compliance</h2>
+					<p>
+						All the webpages created contain no offensive material
+						and images of people are used with given consent. No
+						illegal access to services is granted nor facilities. No
+						advertisements of any kind are present on the site. Most
+						videos are from free stock footage sites however some
+						images may cause copyright infringement due to being
+						pulled from the internet.
+					</p>
+				</section>
 
-                    
-            </section>
+				<section>
+					<h2 id="ref">References</h2>
+					<ul class="ref">
+						<li>
+							Stack Overflow (2025)
+							<i>Stack Overflow.</i> Available at:
+							<a href="#https://stackoverflow.com/questions"
+								>https://stackoverflow.com/questions</a
+							>
+							(Last accessed: 01 March 2025).
+						</li>
+						<li>
+							W3Schools (2025) <i>W3Schools</i> Available at:
+							<a href="https://www.w3schools.com/html/"
+								>https://www.w3schools.com/html/</a
+							>
+							(Last accessed 02 March 2025)
+						</li>
+						<li>
+							Developer Mozilla (2025)
+							<i>Developer Mozilla</i> Available at:
+							<a
+								href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started"
+								>https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started</a
+							>
+							(Last accessed 02 March 2025)
+						</li>
+						<li>
+							GeeksForGeeks (2025) <i>GeeksForGeeks</i> Available
+							at:
+							<a
+								href="https://www.geeksforgeeks.org/html-tutorial/?ref=shm"
+								>https://www.geeksforgeeks.org/html-tutorial/?ref=shm</a
+							>
+							(Last accessed 02 March 2025)
+						</li>
+					</ul>
+				</section>
 
-            <section>
-                <h2 id="ref">References</h2>
-                    <ul class="ref">
-                        <li>Stack Overflow (2025) <i>Stack Overflow.</i> Available at: <a href="#https://stackoverflow.com/questions">https://stackoverflow.com/questions</a> (Last accessed: 01 March 2025).</li>
-                        <li>W3Schools (2025) <i>W3Schools</i> Available at: <a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a> (Last accessed 02 March 2025)</li>
-                        <li>Developer Mozilla (2025) <i>Developer Mozilla</i> Available at: <a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started">https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started</a> (Last accessed 02 March 2025)</li>
-                        <li>GeeksForGeeks (2025) <i>GeeksForGeeks</i> Available at: <a href="https://www.geeksforgeeks.org/html-tutorial/?ref=shm">https://www.geeksforgeeks.org/html-tutorial/?ref=shm</a> (Last accessed 02 March 2025)</li>
-                    </ul>
-            </section>
+				<p class="top"><a href="#top">Go top</a></p>
+			</main>
 
-            <p class="top"><a href="#top">Go top</a></p>
-        </main>
+			<!-- Sidebar area -->
+			<aside>
+				<h3>Core pages developed:</h3>
 
-        <!-- Sidebar area -->
-        <aside>
-            <h3>Core pages developed:</h3>
+				<!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+				<ul class="top-level-ul">
+					<!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+					<li>Student 3</li>
+					<ul>
+						<li><a href="#feedback">Feedback page</a></li>
+						<li><a href="#team">Team page</a></li>
+						<li><a href="#content">Content page</a></li>
+					</ul>
+					<li>
+						<a href="#challenge">Challenges and Lessons Learned</a>
+					</li>
+					<li><a href="#compliance">Compliance</a></li>
+					<li><a href="#ref">References</a></li>
+				</ul>
+			</aside>
+		</div>
 
-        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
-            <ul class="top-level-ul">
-                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
-                <li>Student 3</li>
-                    <ul>
-                        <li><a href="#feedback">Feedback page</a> </li>
-                        <li><a href="#team">Team page</a></li>
-                        <li><a href="#content">Content page</a></li>
-                    </ul>
-                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
-                <li><a href="#compliance">Compliance</a></li>
-                <li><a href="#ref">References</a></li>
-            </ul>
-        </aside>
-    </div>
-
-</body>
-<script src="/js/global.js"></script>
+		<script src="/js/global.js"></script>
+	</body>
 </html>
