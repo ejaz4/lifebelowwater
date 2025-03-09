@@ -27,6 +27,14 @@ p {
     margin-right: 200px;
 }
 
+#section2 li {
+    text-align: center;
+    font-size: 22px;
+    margin-left: 200px;
+    margin-right: 200px;  
+    list-style-type: none;
+}
+
 aside {
     position: fixed;
     top: 0;
@@ -71,7 +79,7 @@ main img {
     padding-top: 20px;
 }
 
-#section2 p {
+#section2 li {
     font-size: 25px;
 }
 
