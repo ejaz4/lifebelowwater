@@ -1,0 +1,171 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Body Styling */
+body {
+  background-color: #2196F3; /* Your Blue Shade */
+  color: #fff;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Header */
+header {
+  background: #1E88E5; /* Slightly Darker Blue for contrast */
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navigation-menu {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-top: 10px;
+}
+
+.navigation-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.navigation-menu a:hover, .current-page {
+  background: white;
+  color: #1E88E5;
+}
+
+/* Main Profile Layout */
+.profile-container {
+  display: flex;
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Left & Right Panels */
+.left-panel, .right-panel {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.left-panel:hover, .right-panel:hover {
+  transform: scale(1.02);
+}
+
+/* Profile Card */
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 2px solid #ddd;
+  transition: background 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+  background: #f1f1f1;
+}
+
+.profile-photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #1E88E5;
+  transition: transform 0.3s;
+}
+
+.profile-photo img:hover {
+  transform: rotate(5deg) scale(1.1);
+}
+
+.profile-info h2 {
+  color: #1E88E5;
+}
+
+.profile-quote {
+  font-style: italic;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Card Styling */
+.card {
+  background: white;
+  padding: 15px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card h3, .card h4 {
+  color: #1E88E5;
+  margin-bottom: 10px;
+}
+
+/* Volunteering Availability Table */
+.availability-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.availability-table th, .availability-table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.availability-table th {
+  background: #1E88E5;
+  color: white;
+}
+
+.availability-table tbody tr:hover {
+  background: #f1f1f1;
+}
+
+/* UN Goals Grid */
+.un-goals-grid img {
+  transition: transform 0.3s;
+}
+
+.un-goals-grid img:hover {
+  transform: scale(1.2);
+}
+
+/* Contact Form */
+.contact-card button {
+  transition: background 0.3s ease-in-out;
+}
+
+.contact-card button:hover {
+  background: #1565C0;
+}
+
+/* Footer */
+footer a:hover {
+  text-decoration: underline;
+}
