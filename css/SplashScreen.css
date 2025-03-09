@@ -1,3 +1,7 @@
+body {
+	padding: 0;
+}
+
 .video-splashscreen {
 	position: relative;
 	width: 100vw;
