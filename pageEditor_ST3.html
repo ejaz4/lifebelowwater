@@ -13,19 +13,114 @@
 		<link rel="stylesheet" href="/css/style.css" />
 
 		<!-- Change /css/template.css to a new css file you've just made -->
-		<link rel="stylesheet" href="/css/template.css" />
-	</head>
-	<body>
-		<!-- WAIT: DON'T WORRY IF YOUR CONTENT DOESN'T SPAN THE WHOLE WIDTH OF THE DISPLAY MONITOR, THIS IS ON PURPOSE TO PUT THE CONTENT AT OPTIMAL VIEWING AND SO IT ADJUSTS WELL ON MOBILE -->
-		<!-- APOLOGIES AGAIN HEHE -->
-		<main class="rootMain">
-			<!-- Put your content here, the header should automatically appear -->
+		<link rel="stylesheet" href="/css/pageEditor_ST3.css" />
+</head>
+<body>
+    
+    <!-- Update the header and the footer to be consistent with the rest of the pages you implemented -->
+    <section class="stud">
+        <h2>Jack Connolly - Student 3</h2>
+    </section>
 
-			<h1>Your content here!</h1>
-			<p>Replace us fr!</p>
-		</main>
-	</body>
+    <div class="container">
+        <!-- Main content area -->
+        <main class="rootMain">
 
-	<!-- Mandatory script to keep here, this is to keep the header operational -->
-	<script src="/js/global.js"></script>
+            <!-- Update those first three sections for the pages you were responsible to implement -->
+
+            <section>
+                <h2 id="feedback">Feedback Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>The feedback page features a large form that users can give information to and submit to the website. It uses the input tags to create fields for users to give information to. It also uses input type = to determine what kind of input should be given to the form, for example fields such as name use input type = "name" whereas others such as phone number use input type = "tel". This is to ensure that users can only submit desired information in the given fields.</p> 
+                        <p>The fields each use setCustomValidity to allow for custom error messages to better inform the user of what they need to do when they haven't provided valid information such as telling the user to insert their full name or give a valid zip code. Certain fields are given the required attribute to make sure that the user cannot submit the form without filling out specific fields that are needed. To better inform the user of what information is needed in each field the label tag is used to provide a description of the input field to tell the user what information to give.</p>
+                        <p>The form features drop down menus and select menus with preselected options for users to choose from as well as a file select button giving them the ability to submit a .png .jpg or .jpeg file</p>
+                        <p>Buttons such as submit have the css attribute cursor:pointer to make it so when hovered the cursor will change. Input fields are given criteria such as input:valid and input:invalid to change the field based on whether the given input is valid or not to help users fill out the form.</p>
+                        <h3>Accessibility</h3>
+                        <p>Required fields are marked with an * to inform the users of what fields need to be filled out. Invalid fields are coloured red and change to green upon giving a valid input. Fields such as zip code have formatting to ensure users can only provide a valid zip code to the field. All fields are given an input type to control what users can submit as well as their name allowing for cached information to be autofilled and submitted from users' browsers. Each question is laid out separately to allow for easier user experience</p>
+                    
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#splashVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                    <h3>Link to the page</h3>
+                        <p><a href="splash.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="team">Team Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#volunteerVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="volunteer.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="content">Content Page</h2>
+                    <h3>Technical Description</h3>
+                        <p>Explain the HTML and CSS techniques used to implement this page. Justify the logic and purpose of the key tags and styling choices focusing on functionality and design without copying large code sections. Explain the purpose of key HTML tags and CSS properties. Specify key HTML tags and CSS properties used to create structure and styling.</p> 
+
+                    <h3>Accessibility</h3>
+                        <p>Explain how you used to addressed accessibility in this particular page you implemented.</p>
+
+                    <h3>Link to the validation page</h3> <!-- Update the path to link the Page Editor with the splash page -->
+                        <p><a href="validation_ST0.html#contentVal">Include a link to the validation page</a>, use the marker to jump to the corresponding section of the validation page.</p> <!-- Update the path to link the Page Editor with the validation page and make it jump to the marker that contains a snapshot for the splash page -->
+
+                        
+                    <h3>Link to the page</h3>
+                        <p><a href="content.html">Include a link to the actual page you describe.</a></p>
+            </section>
+
+            <section>
+                <h2 id="challenge"> Challenges and Lessons Learned</h2>
+                    <p>Detail any challenges encountered during the implementation process and explain how they were resolved. Reflect on the lessons learned from overcoming these challenges.</p> 
+            </section>
+
+            <section>
+                <h2 id="compliance"> Compliance</h2>
+                    <p>Discuss how the pages you have created are compliant with Janet regulations governing web page publication. This includes demonstrating your understanding and application of these regulations. Be realistic and truthful.</p> 
+
+                    
+            </section>
+
+            <section>
+                <h2 id="ref">References</h2>
+                <p>Provide links to resources you used following a consistent format (e.g., APA, MLA, or a simplified style). For example:<br><br>
+                    <ul class="ref">
+                        <li>iStock (2025) <i>iStock.</i> Available at: <a href="#">https://www.istockphoto.com/</a> (Last accessed: 11 Feb 2025).</li>
+                        <li>Duckett, J., 2011. HTML and CSS: Design and Build Websites,<i>John Willey&Sons. Inc. Indianappolis.</i></li>
+                    </ul>
+            </section>
+
+            <p class="top"><a href="#top">Go top</a></p>
+        </main>
+
+        <!-- Sidebar area -->
+        <aside>
+            <h3>Core pages developed:</h3>
+
+        <!-- Customize this to the role you undertook. Keep only the list items you were responsible to develop, delete the rest -->
+            <ul class="top-level-ul">
+                <!-- Keep only the list items you were responsible to develop, delete the rest and update the links to the corresponding markers -->
+                <li>Student 3</li>
+                    <ul>
+                        <li><a href="#feedback">Feedback page</a> </li>
+                        <li><a href="#team">Team page</a></li>
+                        <li><a href="#content">Content page</a></li>
+                    </ul>
+                <li><a href="#challenge">Challenges and Lessons Learned</a></li>
+                <li><a href="#compliance">Compliance</a></li>
+                <li><a href="#ref">References</a></li>
+            </ul>
+        </aside>
+    </div>
+
+</body>
+<script src="/js/global.js"></script>
 </html>
