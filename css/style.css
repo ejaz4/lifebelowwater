@@ -334,6 +334,10 @@ footer h6 {
 	padding: 0;
 }
 
+.footer-list ul li {
+	color: hsl(225.9, 8.3%, 40.2%) !important;
+}
+
 .footer-list a {
 	color: hsl(225.9, 8.3%, 40.2%) !important;
 	text-decoration: none;
