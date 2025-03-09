@@ -63,7 +63,7 @@ main img {
     padding-top: 40px;
 }
 
-#section2 li, #section3 li, #section4 li{
+.points {
     text-align: center;
     list-style-type: none;
     font-size: 30px;
@@ -77,9 +77,11 @@ main img {
 
 .backToTop {
     background-color: red;
+    padding: 10px;
     position: fixed;
     right: 5%;
     bottom: 5%;
+    border-radius: 20px;
 }
 
 
