@@ -6,58 +6,40 @@
     <title>Website Sitemap</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             text-align: center;
+            font-family: Arial, sans-serif;
             background-color: #f4f4f4;
-            padding: 20px;
         }
 
-        .sitemap {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        svg {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+        }
+
+        .link {
+            stroke: gray;
+            stroke-width: 2;
         }
 
         .node {
-            background-color: #3498db;
-            color: white;
-            padding: 12px 25px;
-            border-radius: 5px;
-            margin: 10px;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 18px;
+            fill: #3498db;
+            stroke: #1f618d;
+            stroke-width: 2;
+            cursor: pointer;
+            transition: fill 0.3s;
+        }
+
+        .node:hover, .node:focus {
+            fill: #2ecc71;
+            outline: none;
+        }
+
+        text {
+            font-size: 14px;
             font-weight: bold;
-        }
-
-        .node:hover {
-            opacity: 0.8;
-        }
-
-        .tree {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .branch {
-            display: flex;
-            justify-content: center;
-            margin-top: 10px;
-        }
-
-        .column {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 0 20px;
-        }
-
-        .line {
-            width: 2px;
-            height: 20px;
-            background-color: gray;
-            margin-bottom: 5px;
+            fill: white;
+            pointer-events: none;
         }
     </style>
 </head>
@@ -65,26 +47,46 @@
 
     <h1>Website Sitemap</h1>
 
-    <div class="sitemap">
-        <a href="home.html" class="node">Home</a>
-        <div class="tree">
-            <div class="line"></div>
-            <div class="branch">
-                <div class="column">
-                    <a href="volunteer.html" class="node">Volunteer</a>
-                </div>
-                <div class="column">
-                    <a href="feedback.html" class="node">Feedback</a>
-                </div>
-                <div class="column">
-                    <a href="team.html" class="node">Team</a>
-                </div>
-                <div class="column">
-                    <a href="table.html" class="node">Table</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <svg viewBox="0 0 800 400">
+        <!-- Lines (connections from Home to child pages) -->
+        <line x1="400" y1="70" x2="200" y2="170" class="link"/>
+        <line x1="400" y1="70" x2="300" y2="170" class="link"/>
+        <line x1="400" y1="70" x2="400" y2="170" class="link"/>
+        <line x1="400" y1="70" x2="500" y2="170" class="link"/>
+        <line x1="400" y1="70" x2="600" y2="170" class="link"/>
+
+        <!-- Main Home Node -->
+        <a xlink:href="home.html" tabindex="0">
+            <rect x="370" y="50" width="60" height="40" rx="10" ry="10" class="node"/>
+            <text x="400" y="75" text-anchor="middle">Home</text>
+        </a>
+
+        <!-- Child Nodes (evenly spaced) -->
+        <a xlink:href="volunteer.html" tabindex="0">
+            <rect x="160" y="150" width="100" height="40" rx="10" ry="10" class="node"/>
+            <text x="210" y="175" text-anchor="middle">Volunteer</text>
+        </a>
+
+        <a xlink:href="feedback.html" tabindex="0">
+            <rect x="260" y="150" width="100" height="40" rx="10" ry="10" class="node"/>
+            <text x="310" y="175" text-anchor="middle">Feedback</text>
+        </a>
+
+        <a xlink:href="team.html" tabindex="0">
+            <rect x="360" y="150" width="100" height="40" rx="10" ry="10" class="node"/>
+            <text x="410" y="175" text-anchor="middle">Team</text>
+        </a>
+
+        <a xlink:href="user.html" tabindex="0">
+            <rect x="460" y="150" width="100" height="40" rx="10" ry="10" class="node"/>
+            <text x="510" y="175" text-anchor="middle">Profile</text>
+        </a>
+
+        <a xlink:href="table.html" tabindex="0">
+            <rect x="560" y="150" width="100" height="40" rx="10" ry="10" class="node"/>
+            <text x="610" y="175" text-anchor="middle">Table</text>
+        </a>
+    </svg>
 
 </body>
 </html>

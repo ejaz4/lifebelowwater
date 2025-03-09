@@ -3,105 +3,146 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Page Editor - Your Name</title>
+		<title>Page Editor - Hassan Elfezzari</title>
 		<link rel="stylesheet" href="/css/style.css" />
 		<link rel="stylesheet" href="/css/profile.css" />
+
 		<style>
 			.editor-container {
-				max-width: 800px;
+				max-width: 900px;
 				margin: auto;
 				padding: 20px;
 				background: white;
 				border-radius: 8px;
-				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
 				color: #333;
+				line-height: 1.6;
 			}
-			h1,
-			h2 {
+
+			h1, h2, h3 {
 				color: #1e88e5;
 			}
+
 			.section {
-				margin-top: 20px;
-				padding: 15px;
+				margin-top: 25px;
+				padding: 20px;
 				border-radius: 5px;
 				background: #f9f9f9;
-				box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+				box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
 			}
+
 			.section h3 {
 				margin-bottom: 10px;
+			}
+
+			ul {
+				padding-left: 20px;
+			}
+
+			.validation-images img {
+				width: 100%;
+				max-width: 700px;
+				border-radius: 5px;
+				box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 			}
 		</style>
 	</head>
 	<body>
 		<main class="editor-container">
 			<h1>Page Editor</h1>
-			<h2>Your Name</h2>
-			<p><strong>Role:</strong> Developer - User Profile Page</p>
+			<h2>Hassan Elfezzari</h2>
+			<p><strong>Role:</strong> Developer - User Profile Page & Related Features</p>
 
+			<!-- Completed Tasks Section -->
 			<section class="section">
 				<h3>Completed Tasks</h3>
 				<ul>
-					<li>Designed and implemented the User Profile page.</li>
-					<li>Ensured consistent styling using CSS.</li>
-					<li>
-						Integrated hover animations and interactive elements.
-					</li>
+					<li>Developed a fully responsive <strong>User Profile Page</strong>.</li>
+					<li>Implemented <strong>consistent styling</strong> using Flexbox and Grid.</li>
+					<li>Integrated <strong>volunteering availability table</strong> with a structured layout.</li>
+					<li>Designed <strong>skills progress bars</strong> with animated transitions.</li>
+					<li>Ensured <strong>ARIA attributes & accessibility compliance</strong>.</li>
+					<li>Successfully <strong>validated all pages with W3C tools</strong>.</li>
 				</ul>
 			</section>
 
+			<!-- Technical Description Section -->
 			<section class="section">
 				<h3>Technical Description</h3>
 				<p>
-					The profile page was built using semantic HTML and styled
-					with CSS. I utilized flexbox for layout structure and added
-					hover animations for a dynamic user experience.
+					The <strong>User Profile Page</strong> was developed using <strong>semantic HTML5</strong> and structured with <strong>CSS Flexbox and Grid</strong> for a scalable, responsive design.  
+					Key implementations include:
 				</p>
-				<p>Key elements:</p>
 				<ul>
 					<li>
-						<strong>Profile Card:</strong> Displays user photo,
-						name, and bio.
+						<strong>Profile Card:</strong> Contains the user’s avatar, name, bio, and a <strong>blockquote</strong> for a personal quote.
 					</li>
 					<li>
-						<strong>Skills Section:</strong> Includes progress bars
-						with animated width transitions.
+						<strong>Skills Section:</strong> Uses <strong>div-based progress bars</strong> with percentage-based widths for visualizing skill levels.
 					</li>
 					<li>
-						<strong>Volunteering Availability:</strong> A responsive
-						table for user schedule.
+						<strong>Volunteering Table:</strong> A <strong>table layout with alternating row colors</strong> and clear tick-mark indicators for availability.
+					</li>
+					<li>
+						<strong>Interactive Contact Form:</strong> Properly aligned labels & fields with <strong>CSS Flexbox</strong>, ensuring responsive usability.
 					</li>
 				</ul>
 			</section>
 
+			<!-- Challenges & Lessons Learned Section -->
 			<section class="section">
 				<h3>Challenges and Lessons Learned</h3>
 				<p>
-					One challenge was ensuring the layout adapted well to
-					different screen sizes. I overcame this by using flexible
-					grid and flexbox structures.
+					One of the main challenges was ensuring <strong>proper alignment</strong> of the contact form labels and input fields.  
+					To resolve this, I implemented <strong>CSS Flexbox</strong>, allowing dynamic, consistent spacing across devices.
+				</p>
+				<p>
+					Another challenge was <strong>styling the progress bars dynamically</strong>. Initially, fixed pixel widths caused inconsistencies;  
+					transitioning to <strong>percentage-based widths</strong> improved responsiveness significantly.
 				</p>
 			</section>
 
+			<!-- Accessibility Compliance Section -->
 			<section class="section">
 				<h3>Accessibility and Compliance</h3>
 				<p>
-					All elements include proper contrast, semantic HTML, and
-					ARIA attributes where necessary. The page was validated to
-					ensure compliance with web standards.
-				</p>
-			</section>
-
-			<section class="section">
-				<h3>Validation</h3>
-				<p>
-					All HTML and CSS were validated using W3C tools. Screenshots
-					of validation results are linked below:
+					To ensure accessibility, I incorporated <strong>ARIA attributes</strong> and <strong>alt text for all images</strong>.  
+					The page also passed <strong>WCAG 2.1 Level AA compliance checks</strong>, ensuring usability for screen readers.
 				</p>
 				<ul>
+					<li><strong>Keyboard navigation enabled</strong> for form elements.</li>
+					<li><strong>Contrast ratios checked</strong> for readability compliance.</li>
+					<li><strong>Descriptive labels and placeholders</strong> for enhanced UX.</li>
+				</ul>
+			</section>
+
+			<!-- Validation Results Section -->
+			<section class="section">
+				<h3>Validation Results</h3>
+				<p>
+					All HTML and CSS were <strong>validated using W3C tools</strong>, with no errors and minimal warnings.  
+					Screenshots of validation results are displayed below:
+				</p>
+				<div class="validation-images">
+					<img src="validation_profile" alt="Profile Page Validation Screenshot" />
+				</div>
+				<ul>
+					<li><a href="validation_profile.html">View Full Validation Report</a></li>
+				</ul>
+			</section>
+
+			<!-- References Section -->
+			<section class="section">
+				<h3>References</h3>
+				<ul>
 					<li>
-						<a href="validation_profile.html"
-							>Profile Page Validation</a
-						>
+						<a href="https://www.w3.org/WAI/standards-guidelines/wcag/">W3C Web Content Accessibility Guidelines (WCAG)</a>
+					</li>
+					<li>
+						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs - CSS Reference</a>
+					</li>
+					<li>
+						<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks: A Complete Guide to Flexbox</a>
 					</li>
 				</ul>
 			</section>
