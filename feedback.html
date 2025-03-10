@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<!-- Page metadata -->
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Page title -->
 		<title>Feedback</title>
+		<!-- Link CSS -->
 		<link rel="stylesheet" href="/css/style.css">
 		<link rel="stylesheet" href="/css/feedback.css">
 		<link
@@ -13,6 +16,7 @@
 		<link rel="preload" href="/components/header.html" as="fetch">
 	</head>
 	<body>
+		<!-- Website video -->
 		<section class="video-feedback">
 			<video
 				autoplay
@@ -24,6 +28,7 @@
 			<div class="content-constraint">
 				<div class="content cta-feedback">
 					<div style="text-align: center">
+						<!-- Video Label -->
 						<h2>Feedback</h2>
 					</div>
 				</div>
@@ -35,11 +40,13 @@
 
 			<h2 class="formSubHeader">Required Fields *</h2>
 			<br>
-
+			<!-- Form start -->
 			<form>
 				<fieldset>
-					<legend>Personal Details</legend>
+					<!-- Form label -->
+					<legend>Personal Details</legend> 
 					<div class="mainForm">
+						<!-- Name input -->
 						<label for="name">* Enter Your Full Name</label>
 						<input
 							type="text"
@@ -48,7 +55,8 @@
 							required
 							oninvalid="this.setCustomValidity('Please enter your name')"
 							oninput="this.setCustomValidity('')"><br><br>
-
+						
+						<!-- Email input -->
 						<label for="email">* Enter Your Email</label>
 						<input
 							type="email"
@@ -57,7 +65,8 @@
 							required
 							oninvalid="this.setCustomValidity('Please enter a valid email address')"
 							oninput="this.setCustomValidity('')"><br><br>
-
+						
+						<!-- Phone number input -->
 						<label for="tel">* Enter Your Telephone Number</label>
 						<input
 							type="tel"
@@ -67,6 +76,7 @@
 							oninvalid="this.setCustomValidity('Please enter a valid phone number')"
 							oninput="this.setCustomValidity('')"><br><br>
 
+						<!-- Address input -->
 						<label for="address1">* Address Line 1</label>
 						<input
 							type="text"
@@ -91,7 +101,8 @@
 							required
 							oninvalid="this.setCustomValidity('Please enter your city')"
 							oninput="this.setCustomValidity('')"><br><br>
-
+						
+						<!-- ZIP code input -->
 						<label for="zipcode">* ZIP Postal Code</label>
 						<input
 							type="text"
@@ -101,7 +112,9 @@
 							oninvalid="this.setCustomValidity('Please enter your postal code')"
 							oninput="this.setCustomValidity('')"
 							pattern="[A-Za-z]{1,2}[0-9][0-9A-Za-z]? [0-9][A-Za-z]{2}"><br><br>
-
+							<!-- ZIP code formatting -->
+						
+						<!-- Country select -->
 						<label for="address5">* Country</label>
 						<select
 							name="address5"
@@ -127,6 +140,7 @@
 							<option value="bra">Brazil</option></select
 						><br><br>
 
+						<!-- Drop down select -->
 						<label for="recycling"
 							>* What materials do you recycle? (Select multiple
 							if it applies)</label
@@ -149,13 +163,15 @@
 							<option value="textiles">Textiles</option>
 							<option value="none">None</option></select
 						><br><br>
-
+						
+						<!-- Date input -->
 						<label for="date">When did you last recycle?</label>
 						<input
 							type="datetime-local"
 							id="date"
 							name="date"><br><br>
 
+						<!-- File input -->
 						<label for="file"
 							>Attach a photo of your recycling!</label
 						><br><br>
@@ -170,6 +186,7 @@
 				<fieldset>
 					<legend>Feedback Details</legend>
 
+					<!-- Radio button -->
 					<p>Was This Your First Time Visiting?</p>
 					<br>
 					<input type="radio" id="yes" name="firstTime">
@@ -193,6 +210,7 @@
 					<input type="radio" id="no2" name="nav">
 					<label for="no2">No</label><br><br>
 
+					<!-- Text area input -->
 					<label for="improvements"
 						>* If "No", suggest any improvements for the
 						future</label
@@ -210,6 +228,7 @@
 					></textarea
 					><br>
 
+					<!-- Star rating system -->
 					<br>
 					<p>* How satisfied are you with our services?</p>
 					<br><br>
