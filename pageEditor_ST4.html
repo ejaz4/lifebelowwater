@@ -3,149 +3,138 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Page Editor - Hassan Elfezzari</title>
+		<title>Seasweep</title>
+
+		<!-- Preload global styles & scripts -->
+		<link rel="preload" href="/js/global.js" as="script" />
+		<link rel="preload" href="/components/header.html" as="fetch" />
+
+		<!-- Global stylesheet -->
 		<link rel="stylesheet" href="/css/style.css" />
-		<link rel="stylesheet" href="/css/profile.css" />
-
-		<style>
-			.editor-container {
-				max-width: 900px;
-				margin: auto;
-				padding: 20px;
-				background: white;
-				border-radius: 8px;
-				box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
-				color: #333;
-				line-height: 1.6;
-			}
-
-			h1, h2, h3 {
-				color: #1e88e5;
-			}
-
-			.section {
-				margin-top: 25px;
-				padding: 20px;
-				border-radius: 5px;
-				background: #f9f9f9;
-				box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-			}
-
-			.section h3 {
-				margin-bottom: 10px;
-			}
-
-			ul {
-				padding-left: 20px;
-			}
-
-			.validation-images img {
-				width: 100%;
-				max-width: 700px;
-				border-radius: 5px;
-				box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-			}
-		</style>
+		<link rel="stylesheet" href="/css/pageEditor_ST3.css" />
 	</head>
 	<body>
-		<main class="editor-container">
-			<h1>Page Editor</h1>
-			<h2>Hassan Elfezzari</h2>
-			<p><strong>Role:</strong> Developer - User Profile Page & Related Features</p>
+		<!-- Student Information -->
+		<section class="stud">
+			<h2>Hassan Elfezzari - Student 4</h2>
+		</section>
 
-			<!-- Completed Tasks Section -->
-			<section class="section">
-				<h3>Completed Tasks</h3>
-				<ul>
-					<li>Developed a fully responsive <strong>User Profile Page</strong>.</li>
-					<li>Implemented <strong>consistent styling</strong> using Flexbox and Grid.</li>
-					<li>Integrated <strong>volunteering availability table</strong> with a structured layout.</li>
-					<li>Designed <strong>skills progress bars</strong> with animated transitions.</li>
-					<li>Ensured <strong>ARIA attributes & accessibility compliance</strong>.</li>
-					<li>Successfully <strong>validated all pages with W3C tools</strong>.</li>
+		<div class="container">
+			<!-- Main content area -->
+			<main class="rootMain">
+				<section>
+					<h2 id="profile">User Profile Page</h2>
+					<h3>Technical Description</h3>
+					<p>
+						The User Profile page was created using **semantic HTML5** and styled with **CSS Flexbox & Grid** for responsiveness.
+						It includes:
+					</p>
+					<ul>
+						<li>A **profile card** with an avatar, bio, and contact details.</li>
+						<li>A **volunteering availability table** with checkboxes.</li>
+						<li>A **contact form** with proper labels and ARIA attributes.</li>
+						<li>A **UN Goals section**, displaying icons representing supported initiatives.</li>
+					</ul>
+					<h3>Accessibility</h3>
+					<p>
+						The profile page ensures **keyboard navigation support**, **proper contrast ratios**, and **ARIA roles** for assistive technologies.
+					</p>
+					<h3>Link to Validation</h3>
+					<p><a href="validation_ST4.html#profile">Link to validation page</a></p>
+					<h3>Link to the Page</h3>
+					<p><a href="profile.html">Link</a></p>
+				</section>
+
+				<section>
+					<h2 id="sitemap">Sitemap Page</h2>
+					<h3>Technical Description</h3>
+					<p>
+						The sitemap was developed using **SVG graphics** to visually represent the website structure.
+						It features:
+					</p>
+					<ul>
+						<li>Interactive **clickable nodes** linking to respective pages.</li>
+						<li>Hover effects for **better visibility**.</li>
+						<li>Keyboard accessibility for **better user navigation**.</li>
+					</ul>
+					<h3>Accessibility</h3>
+					<p>
+						Each node in the sitemap includes **alt text descriptions** and **keyboard focus indicators**.
+					</p>
+					<h3>Link to Validation</h3>
+					<p><a href="validation_ST4.html#sitemap">Link to validation page</a></p>
+					<h3>Link to the Page</h3>
+					<p><a href="sitemap.html">Link</a></p>
+				</section>
+
+				<section>
+					<h2 id="content">Content Page - Oceans & Marine Conservation</h2>
+					<h3>Technical Description</h3>
+					<p>
+						This page was structured with **HTML sections & internal navigation** for better user experience.
+						Features include:
+					</p>
+					<ul>
+						<li>A **fixed navigation menu** linking to sections.</li>
+						<li>High-quality **images with alt attributes** for accessibility.</li>
+						<li>Interactive **quote & statistics elements**.</li>
+						<li>A **back-to-top button** for smooth scrolling.</li>
+					</ul>
+					<h3>Accessibility</h3>
+					<p>
+						The page includes **descriptive headings, structured lists, and clear focus indicators**.
+					</p>
+					<h3>Link to Validation</h3>
+					<p><a href="validation_ST4.html#content">Link to validation page</a></p>
+					<h3>Link to the Page</h3>
+					<p><a href="content_ST4.html">Link</a></p>
+				</section>
+
+				<section>
+					<h2 id="challenges">Challenges and Lessons Learned</h2>
+					<p>
+						One of the main challenges was implementing **SVG interactivity** in the sitemap. I solved it using JavaScript for hover and focus states.
+						Another challenge was ensuring **form accessibility** in the profile page, which required ARIA labeling and proper input focus.
+					</p>
+				</section>
+
+				<section>
+					<h2 id="compliance">Compliance</h2>
+					<p>
+						All pages follow **WCAG 2.1 accessibility guidelines** and **HTML5 validation** standards. The website contains no copyrighted materials and adheres to **university regulations**.
+					</p>
+				</section>
+
+				<section>
+					<h2 id="ref">References</h2>
+					<ul class="ref">
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web">MDN Web Docs</a></li>
+						<li><a href="https://www.w3.org/WAI/standards-guidelines/wcag/">W3C Accessibility Guidelines</a></li>
+						<li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks: A Guide to Flexbox</a></li>
+					</ul>
+				</section>
+
+				<p class="top"><a href="#top">Go top</a></p>
+			</main>
+
+			<!-- Sidebar for quick navigation -->
+			<aside>
+				<h3>Core Pages Developed:</h3>
+				<ul class="top-level-ul">
+					<li>Student 4</li>
+					<ul>
+						<li><a href="#profile">User Profile Page</a></li>
+						<li><a href="#sitemap">Sitemap Page</a></li>
+						<li><a href="#content">Content Page</a></li>
+					</ul>
+					<li><a href="#challenges">Challenges and Lessons Learned</a></li>
+					<li><a href="#compliance">Compliance</a></li>
+					<li><a href="#ref">References</a></li>
 				</ul>
-			</section>
+			</aside>
+		</div>
 
-			<!-- Technical Description Section -->
-			<section class="section">
-				<h3>Technical Description</h3>
-				<p>
-					The <strong>User Profile Page</strong> was developed using <strong>semantic HTML5</strong> and structured with <strong>CSS Flexbox and Grid</strong> for a scalable, responsive design.  
-					Key implementations include:
-				</p>
-				<ul>
-					<li>
-						<strong>Profile Card:</strong> Contains the user’s avatar, name, bio, and a <strong>blockquote</strong> for a personal quote.
-					</li>
-					<li>
-						<strong>Skills Section:</strong> Uses <strong>div-based progress bars</strong> with percentage-based widths for visualizing skill levels.
-					</li>
-					<li>
-						<strong>Volunteering Table:</strong> A <strong>table layout with alternating row colors</strong> and clear tick-mark indicators for availability.
-					</li>
-					<li>
-						<strong>Interactive Contact Form:</strong> Properly aligned labels & fields with <strong>CSS Flexbox</strong>, ensuring responsive usability.
-					</li>
-				</ul>
-			</section>
-
-			<!-- Challenges & Lessons Learned Section -->
-			<section class="section">
-				<h3>Challenges and Lessons Learned</h3>
-				<p>
-					One of the main challenges was ensuring <strong>proper alignment</strong> of the contact form labels and input fields.  
-					To resolve this, I implemented <strong>CSS Flexbox</strong>, allowing dynamic, consistent spacing across devices.
-				</p>
-				<p>
-					Another challenge was <strong>styling the progress bars dynamically</strong>. Initially, fixed pixel widths caused inconsistencies;  
-					transitioning to <strong>percentage-based widths</strong> improved responsiveness significantly.
-				</p>
-			</section>
-
-			<!-- Accessibility Compliance Section -->
-			<section class="section">
-				<h3>Accessibility and Compliance</h3>
-				<p>
-					To ensure accessibility, I incorporated <strong>ARIA attributes</strong> and <strong>alt text for all images</strong>.  
-					The page also passed <strong>WCAG 2.1 Level AA compliance checks</strong>, ensuring usability for screen readers.
-				</p>
-				<ul>
-					<li><strong>Keyboard navigation enabled</strong> for form elements.</li>
-					<li><strong>Contrast ratios checked</strong> for readability compliance.</li>
-					<li><strong>Descriptive labels and placeholders</strong> for enhanced UX.</li>
-				</ul>
-			</section>
-
-			<!-- Validation Results Section -->
-			<section class="section">
-				<h3>Validation Results</h3>
-				<p>
-					All HTML and CSS were <strong>validated using W3C tools</strong>, with no errors and minimal warnings.  
-					Screenshots of validation results are displayed below:
-				</p>
-				<div class="validation-images">
-					<img src="validation_profile" alt="Profile Page Validation Screenshot" />
-				</div>
-				<ul>
-					<li><a href="validation_profile.html">View Full Validation Report</a></li>
-				</ul>
-			</section>
-
-			<!-- References Section -->
-			<section class="section">
-				<h3>References</h3>
-				<ul>
-					<li>
-						<a href="https://www.w3.org/WAI/standards-guidelines/wcag/">W3C Web Content Accessibility Guidelines (WCAG)</a>
-					</li>
-					<li>
-						<a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN Web Docs - CSS Reference</a>
-					</li>
-					<li>
-						<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS-Tricks: A Complete Guide to Flexbox</a>
-					</li>
-				</ul>
-			</section>
-		</main>
+		<!-- Mandatory script for global header/footer -->
+		<script src="/js/global.js"></script>
 	</body>
 </html>
