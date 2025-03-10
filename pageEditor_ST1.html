@@ -62,9 +62,113 @@
 				<section id="section1">
 					<h2>Splash screen</h2>
 					<h3>Technical Description</h3>
-					<p></p>
+					<p>
+						The splashScreen.html file is designed as a splash
+						screen that plays a background video while displaying
+						the organization's name, mission statement, and a list
+						of contributors. The page automatically redirects to
+						home.html after 4 seconds.
+					</p>
+					<h4>Key features</h4>
+					<h5>Structured Content</h5>
+					<ul>
+						<li>
+							Header: Displays the title “SeaGate” with a tagline
+						</li>
+						<li>
+							Logo: A visually prominent SVG image
+							(/images/logo-filled-negative.svg)
+						</li>
+						<li>
+							Organization Mission Statement: Provides details
+							about the UK-based charity’s goal
+						</li>
+						<li>Group Member List: Acknowledges contributors</li>
+						<li>
+							Animated Loading Indicator
+							<ul>
+								<li>
+									Uses three animated circles (div.circle) to
+									indicate page loading
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<h4>Auto-Redirect</h4>
+					<ul>
+						<li>
+							meta http-equiv="refresh" content="4; url=home.html"
+							Redirects to home.html after 4 seconds
+						</li>
+					</ul>
+					<h4>div.circle</h4>
+					<p>
+						Each div class="circle" represents a small bouncing
+						circle in the loader animation.
+					</p>
+					<h4>How it works</h4>
+					<h5>display: flex; in .loader</h5>
+					<ul>
+						<li>
+							Aligns the three circles horizontally
+							(justify-content: center;)
+						</li>
+						<li>Adds spacing between them (gap: 20px;).</li>
+						<li>
+							Aligns them at the bottom of the container
+							(align-items: flex-end;)
+						</li>
+					</ul>
+					<h5>.circle Styles</h5>
+					<ul>
+						<li>
+							Shape: border-radius: 50%; to make them circular
+						</li>
+						<li>
+							Animation: animation: moveUpAndDown 2s ease
+							infinite; (applies the bouncing effect).
+						</li>
+					</ul>
+					<h5>Bouncing Animation (@keyframes moveUpAndDown)</h5>
+					<ul>
+						<li>
+							0% and 100%: The circles remain at their original
+							position.
+						</li>
+						<li>
+							50%: The circles move 50px upwards
+							(translateY(-50px);)
+						</li>
+						<li>The movement creates a bouncing effect.</li>
+					</ul>
+					<h5>Animation Delays</h5>
+					<ul>
+						<li>The 2nd circle starts 0.5 seconds later.</li>
+						<li>The 3rd circle starts 1 second later.</li>
+						<li>
+							This staggered timing creates a wave-like bouncing
+							effect instead of all circles jumping together.
+						</li>
+					</ul>
 					<h3>Accessibility</h3>
-					<p></p>
+					<h4>Semantic HTML</h4>
+					<ul>
+						<li>Uses h1, h2, h3, p, and img appropriately.</li>
+					</ul>
+					<h4>Color Contrast & Readability</h4>
+					<ul>
+						<li>
+							The dark overlay (rgba(0, 0, 0, 0.5)) ensures text
+							remains readable against the video.
+						</li>
+					</ul>
+					<h4>Keyboard & Screen Reader Navigation</h4>
+					<ul>
+						<li>
+							Content is structured logically with clear heading
+							levels.
+						</li>
+					</ul>
 					<h3>Links</h3>
 					<ul>
 						<li><a href="splashScreen.html">Splash screen</a></li>
@@ -74,7 +178,29 @@
 				<section id="section2">
 					<h2>Volunteer</h2>
 					<h3>Technical Description</h3>
-					<p></p>
+					<h4>Structured Content</h4>
+					<ul>
+						<li>Video</li>
+						<li>Charity projects</li>
+						<li>feedback and reviews</li>
+					</ul>
+					<h4>Video</h4>
+					<ul>
+						<li>
+							Uses a video element with autoplay, loop, muted, and
+							playsinline attributes.
+						</li>
+						<li>
+							Video is positioned using CSS (video-volunteer
+							class).
+						</li>
+					</ul>
+					<p>
+						Display: flex is used to position the video so it stays
+						at the top and moves with the size of the tab.
+						justify-content: center and align-items: center are used
+						to center text into the middle of the video.
+					</p>
 					<h3>Accessibility</h3>
 					<p></p>
 					<h3>Links</h3>
