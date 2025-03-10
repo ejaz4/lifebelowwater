@@ -6,14 +6,14 @@
 		<title>Page Editor - SeaGate</title>
 
 		<!-- This is to preload the header to prevent cumulative layout shift: https://developer.mozilla.org/en-US/docs/Glossary/CLS -->
-		<link rel="preload" href="/js/global.js" as="script" />
-		<link rel="preload" href="/components/header.html" as="fetch" />
+		<link rel="preload" href="js/global.js" as="script" />
+		<link rel="preload" href="components/header.html" as="fetch" />
 
 		<!-- Mandatory link, this is for the global styles that is used by the header and everything else -->
-		<link rel="stylesheet" href="/css/style.css" />
+		<link rel="stylesheet" href="css/style.css" />
 
 		<!-- Change /css/template.css to a new css file you've just made -->
-		<link rel="stylesheet" href="/css/template.css" />
+		<link rel="stylesheet" href="css/pageEditor_ST2.css" />
 	</head>
 	<body>
 		<!-- WAIT: DON'T WORRY IF YOUR CONTENT DOESN'T SPAN THE WHOLE WIDTH OF THE DISPLAY MONITOR, THIS IS ON PURPOSE TO PUT THE CONTENT AT OPTIMAL VIEWING AND SO IT ADJUSTS WELL ON MOBILE -->
@@ -22,11 +22,125 @@
 			<!-- Put your content here, the header should automatically appear -->
 			<section class="readable">
 				<h1>Ejaz Ali&apos;s Page Editor</h1>
-				<p>Replace us fr!</p>
+				<p>Navigation, global styles and home page</p>
+
+				<div class="card">
+					<h2>Home page</h2>
+					<code>home.html</code>
+					<p>
+						The homepage is a page which is presented to the user
+						after the splash screen. It is designed to be visually
+						appealing and quickly explain the purpose of SeaGate as
+						well as provide a call to action for the user to get
+						involved.
+					</p>
+					<p>
+						The current call to action is to volunteer labelled as
+						"Help now", as we would rather point the user to
+						volunteer rather than donate or give money.
+					</p>
+					<p>
+						The homepage starts off showcasing a video of a man who
+						is pulling a bucket out of the water, which is relevant
+						to the goal of the charity.
+					</p>
+					<p>
+						The video is contained in a
+						<code>&lt;section&gt;</code> which has a primary purpose
+						of dividing the rest of the content away from this page,
+						and to help layer text on-top of the video to use the
+						space extremely efficiently.
+					</p>
+					<p>
+						In order to layer the text on-top of the video, I opted
+						to use the following CSS rule:
+						<code>position: relative</code> on the section, and
+						<code>position: absolute</code> on the video.
+					</p>
+					<p>
+						How this works is that
+						<code>position: relative</code> makes sure that children
+						inside of it can only be positioned inside of it and not
+						across the whole DOM, which makes it easier for me to
+						position the text on-top of the video as the video
+						stayed attached to the section at all times.
+					</p>
+					<p>
+						This also means I don&apos;t need to disrupt the normal
+						flow of the DOM by positioning elements that don&apos;t
+						exist due to <code>position: absolute</code> or
+						<code>position: fixed</code>.
+					</p>
+					<hr />
+					<p>Just below it, the page content begins.</p>
+					<p>
+						I wanted something eye-catching and something simple, so
+						I addded a beautiful rainbow that I built in a design
+						tool called Figma and applied it as a
+						<code>background-image</code> that stays at the top
+						centre of the section, always.
+					</p>
+					<p>
+						Some simple words explaining who we are and what we do,
+						as well as three cards that explain our business model
+						and our relation to the United Nations in steps.
+					</p>
+					<p>
+						That ensures that visitors are aware of who we are, what
+						we do, why we do it, and who we do it for - cruicial
+						information to keep the user engaged.
+					</p>
+					<p>
+						Inside each of the 3 cards, there is an image with an
+						icon: an institution, a spanner and a heart - which
+						shows how changes come from the UN and end up with world
+						love being the end result of all of our actions.
+					</p>
+					<p>
+						There is a beautiful shadow underneath all of the card
+						to distinguish them and on mobile and lower resolution
+						screens only one card is visible at a time, and you can
+						scroll left and right where the scroll snaps to the
+						start of the cards to avoid content not being visible at
+						all.
+					</p>
+
+					<hr />
+
+					<p>
+						Below that I have the links to the content page in a
+						creative way.
+					</p>
+					<p>
+						I instructed my team members to create their content
+						pages like news or blog articles to which I created a
+						section named Reads From SeaGate which contains a grid
+						of posts.
+					</p>
+					<p>
+						The posts link to the content pages of each student in
+						their respective order and the post previews contain the
+						image and titles of the content pages.
+					</p>
+					<hr />
+					<p>
+						Throughout the whole home page, I made use of flexbox, a
+						very cool CSS technology which allows me to make
+						children of a particular element move around exactly how
+						I want them to, all while staying responsive.
+					</p>
+				</div>
+
+				<div class="card">
+					<h2>Table page (Donate)</h2>
+					<code>table.html</code>
+
+					<p></p>
+				</div>
 			</section>
 		</main>
 
 		<!-- Mandatory script to keep here, this is to keep the header operational -->
-		<script src="/js/global.js"></script>
+		<script src="js/global.js"></script>
 	</body>
 </html>

@@ -383,3 +383,13 @@ footer h6 {
 	width: 100%;
 	border-radius: 4px;
 }
+
+code {
+	padding: 1px;
+	line-height: 18px;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	line-height: 16px;
+	border: solid 1px rgba(0, 0, 0, 0.2);
+	font-family: monospace;
+}
