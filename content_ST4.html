@@ -1,155 +1,294 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oceans and Marine Conservation</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/content_ST4.css">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-            background-color: #eef5f9;
-            color: #333;
-            padding: 20px;
-        }
-        .content-container {
-            max-width: 1000px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        h1, h2 {
-            color: #1E88E5;
-        }
-        .section {
-            margin-bottom: 30px;
-        }
-        .back-to-top {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background: #1E88E5;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 50%;
-            text-align: center;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .back-to-top:hover {
-            background: #1565C0;
-        }
-        .nav-links {
-            display: flex;
-            justify-content: space-around;
-            background: #1E88E5;
-            padding: 10px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .nav-links a:hover {
-            text-decoration: underline;
-        }
-        img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        .quote {
-            font-style: italic;
-            color: #555;
-            padding: 10px;
-            border-left: 4px solid #1E88E5;
-            margin: 15px 0;
-        }
-    </style>
-</head>
-<body>
-    <div class="content-container">
-        <h1 id="top">🌊 Oceans and Marine Conservation</h1>
-        <p>Our oceans are the lifeblood of the Earth. They regulate the climate, maintain the diversity of life, and provide food and livelihoods for billions of people. And yet, through our actions, we have placed them at risk. On this page, we examine the significance of oceans, the threats to them, and how we can act to protect them.</p>
-        
-        <div class="nav-links">
-            <a href="#importance">Importance</a>
-            <a href="#challenges">Challenges</a>
-            <a href="#initiatives">Global Initiatives</a>
-            <a href="#technology">Technology</a>
-            <a href="#community">Community Engagement</a>
-            <a href="#action">Take Action</a>
-        </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Oceans and Marine Conservation</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/content_ST4.css" />
+		<style>
+			body {
+				font-family: "Inter", sans-serif;
+				background-color: #eef5f9;
+				color: #333;
+				padding: 20px;
+			}
+			.content-container {
+				max-width: 1000px;
+				margin: auto;
+				background: white;
+				padding: 20px;
+				border-radius: 10px;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+			}
+			h1,
+			h2 {
+				color: #1e88e5;
+			}
+			.section {
+				margin-bottom: 30px;
+			}
+			.back-to-top {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				background: #1e88e5;
+				color: white;
+				padding: 10px 15px;
+				border-radius: 50%;
+				text-align: center;
+				font-weight: bold;
+				text-decoration: none;
+			}
+			.back-to-top:hover {
+				background: #1565c0;
+			}
+			.nav-links {
+				display: flex;
+				justify-content: space-around;
+				background: #1e88e5;
+				padding: 10px;
+				border-radius: 5px;
+				margin-bottom: 20px;
+			}
+			.nav-links a {
+				color: white;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			.nav-links a:hover {
+				text-decoration: underline;
+			}
+			img {
+				width: 100%;
+				height: auto;
+				border-radius: 10px;
+				margin-top: 10px;
+			}
+			ul {
+				padding-left: 20px;
+			}
+			.quote {
+				font-style: italic;
+				color: #555;
+				padding: 10px;
+				border-left: 4px solid #1e88e5;
+				margin: 15px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<section class="content header-top">
+				<section>
+					<a
+						href="https://w2116028.users.ecs.westminster.ac.uk/seagate/home.html"
+					>
+						<div class="logo-full">
+							<img
+								src="images/logo-filled-negative.svg"
+								alt="Seasweep Logo"
+								class="seasweep-logo"
+							/>
+							<h1 class="desktop-only not-in-relax">SeaGate</h1>
+						</div>
+					</a>
+				</section>
+				<a
+					href="#navigation-menu"
+					id="hamburger-trigger"
+					class="mobile-only"
+				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="28"
+						height="28"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						class="lucide lucide-menu"
+					>
+						<line x1="4" x2="20" y1="12" y2="12" />
+						<line x1="4" x2="20" y1="6" y2="6" />
+						<line x1="4" x2="20" y1="18" y2="18" />
+					</svg>
+				</a>
+				<nav id="navigation-menu" class="desktop-only navigation-menu">
+					<a
+						href="https://w2116344.users.ecs.westminster.ac.uk/seagate/volunteer.html"
+						>Volunteer</a
+					>
+					<a
+						href="https://w2058646.users.ecs.westminster.ac.uk/seagate/feedback.html"
+						>Feedback</a
+					>
+					<a
+						href="https://w2058646.users.ecs.westminster.ac.uk/seagate/team.html"
+						>Team</a
+					>
+					<a
+						href="https://w2093765.users.ecs.westminster.ac.uk/seagate/user.html"
+						>Profile</a
+					>
+					<a
+						href="https://w2116028.users.ecs.westminster.ac.uk/seagate/table.html"
+						>Donate</a
+					>
+					<a
+						href="https://w2093765.users.ecs.westminster.ac.uk/seagate/sitemap.html"
+						>Sitemap</a
+					>
+				</nav>
+			</section>
+		</header>
+		<div class="content-container">
+			<h1 id="top">🌊 Oceans and Marine Conservation</h1>
+			<p>
+				Our oceans are the lifeblood of the Earth. They regulate the
+				climate, maintain the diversity of life, and provide food and
+				livelihoods for billions of people. And yet, through our
+				actions, we have placed them at risk. On this page, we examine
+				the significance of oceans, the threats to them, and how we can
+				act to protect them.
+			</p>
 
-        <div class="section" id="importance">
-            <h2>🌏 Importance of Oceans</h2>
-            <img src="./images/1.png" alt="Vast ocean view">
-            <p>Oceans cover over 70% of the Earth's surface and hold 97% of the planet's water. They produce at least 50% of the world’s oxygen and absorb 30% of human-generated CO₂, acting as Earth’s natural climate regulator.</p>
-            <div class="quote">
-                “The ocean is the keystone of the Earth's life support system.”
-            </div>
-            <p>In addition to their ecological functions, oceans sustain a $2.5 trillion international economy annually, encompassing the shipping, tourism, and fishing industries.</p>
-        </div>
-        
-        <div class="section" id="challenges">
-            <h2>⚠️ Challenges Facing Marine Environments</h2>
-            <img src="./images/2.png" alt="Plastic debris on a beach">
-            <h3>Plastic Pollution</h3>
-            <p>Over 17 million metric tons of plastic trash enter the ocean annually, posing a threat to marine life as well as contaminating the food supply. The figure is projected to triple by the year 2040 if no actions are taken.</p>
-            <h3>Climate Change & Ocean Acidification</h3>
-            <p>Ocean acidity has increased by 30% since the start of the Industrial Revolution, which complicates the ability of coral reefs and shellfish to survive. Rising sea temperatures also cause coral bleaching and loss of marine habitat.</p>
-            <h3>Overfishing & Habitat Destruction</h3>
-            <p>34% of the global stocks of fish are overexploited. Illegal fishing and destructive methods like bottom trawling are wiping out entire ecosystems.</p>
-        </div>
-        
-        <div class="section" id="initiatives">
-            <h2>🌍 Global Initiatives to Protect Oceans</h2>
-            <img src="./images/3.png" alt="Map of Marine Protected Areas">
-            <p>Governments and organizations worldwide are working together to safeguard marine biodiversity:</p>
-            <ul>
-                <li><b>Marine Protected Areas (MPAs):</b> Over 16% of marine waters are conserved in order to prevent overfishing and habitat destruction.</li>
-                <li><b>Plastic Waste Reduction:</b> The UK, Canada, and Kenya have outlawed single-use plastics.</li>
-                <li><b>Coral Reef Conservation:</b> The Coral Triangle Initiative rehabilitates reefs in Asia-Pacific.</li>
-            </ul>
-        </div>
-        
-        <div class="section" id="technology">
-            <h2>🚀 Technology in Marine Conservation</h2>
-            <img src="./images/4.png" alt="Satellite monitoring oceans">
-            <p>Ocean conservation is revolutionized by advancements in technology:</p>
-            <ul>
-                <li>🛰️ **Satellite monitoring** detects illegal fishing and the effects of climate change.</li>
-                <li>🤖 **AI-powered drones** pick up plastic debris in oceans.</li>
-                <li>🌊 **Tidal power** utilizes ocean waves to produce renewable energy.</li>
-            </ul>
-        </div>
-        
-        <div class="section" id="community">
-            <h2>👥 Community Engagement & Sustainability</h2>
-            <p>Local initiatives provide opportunities for people to take charge. Eco-tourism, sustainable fishing, and education programs promote awareness for marine conservation.</p>
-        </div>
+			<div class="nav-links">
+				<a href="#importance">Importance</a>
+				<a href="#challenges">Challenges</a>
+				<a href="#initiatives">Global Initiatives</a>
+				<a href="#technology">Technology</a>
+				<a href="#community">Community Engagement</a>
+				<a href="#action">Take Action</a>
+			</div>
 
-        <div class="section" id="action">
-            <h2>✅ What You Can Do</h2>
-            <p>Small lifestyle changes can make a big difference:</p>
-            <ul>
-                <li>Use reusable bags, containers, and cutlery to cut down on plastic waste.</li>
-                <li>Participate in beach clean-ups and conservation efforts.</li>
-                <li>Choose certified sustainable seafood to support responsible fishing practices.</li>
-            </ul>
-            <p>Every action matters. Protecting our oceans is a shared responsibility!</p>
-        </div>
+			<div class="section" id="importance">
+				<h2>🌏 Importance of Oceans</h2>
+				<img src="./images/1.png" alt="Vast ocean view" />
+				<p>
+					Oceans cover over 70% of the Earth's surface and hold 97% of
+					the planet's water. They produce at least 50% of the world’s
+					oxygen and absorb 30% of human-generated CO₂, acting as
+					Earth’s natural climate regulator.
+				</p>
+				<div class="quote">
+					“The ocean is the keystone of the Earth's life support
+					system.”
+				</div>
+				<p>
+					In addition to their ecological functions, oceans sustain a
+					$2.5 trillion international economy annually, encompassing
+					the shipping, tourism, and fishing industries.
+				</p>
+			</div>
 
-        <a href="#top" class="back-to-top">&#8679; Go to Top</a>
-    </div>
-</body>
+			<div class="section" id="challenges">
+				<h2>⚠️ Challenges Facing Marine Environments</h2>
+				<img src="./images/2.png" alt="Plastic debris on a beach" />
+				<h3>Plastic Pollution</h3>
+				<p>
+					Over 17 million metric tons of plastic trash enter the ocean
+					annually, posing a threat to marine life as well as
+					contaminating the food supply. The figure is projected to
+					triple by the year 2040 if no actions are taken.
+				</p>
+				<h3>Climate Change & Ocean Acidification</h3>
+				<p>
+					Ocean acidity has increased by 30% since the start of the
+					Industrial Revolution, which complicates the ability of
+					coral reefs and shellfish to survive. Rising sea
+					temperatures also cause coral bleaching and loss of marine
+					habitat.
+				</p>
+				<h3>Overfishing & Habitat Destruction</h3>
+				<p>
+					34% of the global stocks of fish are overexploited. Illegal
+					fishing and destructive methods like bottom trawling are
+					wiping out entire ecosystems.
+				</p>
+			</div>
+
+			<div class="section" id="initiatives">
+				<h2>🌍 Global Initiatives to Protect Oceans</h2>
+				<img src="./images/3.png" alt="Map of Marine Protected Areas" />
+				<p>
+					Governments and organizations worldwide are working together
+					to safeguard marine biodiversity:
+				</p>
+				<ul>
+					<li>
+						<b>Marine Protected Areas (MPAs):</b> Over 16% of marine
+						waters are conserved in order to prevent overfishing and
+						habitat destruction.
+					</li>
+					<li>
+						<b>Plastic Waste Reduction:</b> The UK, Canada, and
+						Kenya have outlawed single-use plastics.
+					</li>
+					<li>
+						<b>Coral Reef Conservation:</b> The Coral Triangle
+						Initiative rehabilitates reefs in Asia-Pacific.
+					</li>
+				</ul>
+			</div>
+
+			<div class="section" id="technology">
+				<h2>🚀 Technology in Marine Conservation</h2>
+				<img src="./images/4.png" alt="Satellite monitoring oceans" />
+				<p>
+					Ocean conservation is revolutionized by advancements in
+					technology:
+				</p>
+				<ul>
+					<li>
+						🛰️ **Satellite monitoring** detects illegal fishing and
+						the effects of climate change.
+					</li>
+					<li>
+						🤖 **AI-powered drones** pick up plastic debris in
+						oceans.
+					</li>
+					<li>
+						🌊 **Tidal power** utilizes ocean waves to produce
+						renewable energy.
+					</li>
+				</ul>
+			</div>
+
+			<div class="section" id="community">
+				<h2>👥 Community Engagement & Sustainability</h2>
+				<p>
+					Local initiatives provide opportunities for people to take
+					charge. Eco-tourism, sustainable fishing, and education
+					programs promote awareness for marine conservation.
+				</p>
+			</div>
+
+			<div class="section" id="action">
+				<h2>✅ What You Can Do</h2>
+				<p>Small lifestyle changes can make a big difference:</p>
+				<ul>
+					<li>
+						Use reusable bags, containers, and cutlery to cut down
+						on plastic waste.
+					</li>
+					<li>
+						Participate in beach clean-ups and conservation efforts.
+					</li>
+					<li>
+						Choose certified sustainable seafood to support
+						responsible fishing practices.
+					</li>
+				</ul>
+				<p>
+					Every action matters. Protecting our oceans is a shared
+					responsibility!
+				</p>
+			</div>
+
+			<a href="#top" class="back-to-top">&#8679; Go to Top</a>
+		</div>
+	</body>
 </html>
