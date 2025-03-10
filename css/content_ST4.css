@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #eef5f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Content Wrapper */
+.content-container {
+    max-width: 1000px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1, h2 {
+    color: #1E88E5;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+h2 {
+    margin-top: 20px;
+    font-size: 2rem;
+    border-bottom: 3px solid #1E88E5;
+    padding-bottom: 5px;
+}
+h3 {
+    font-size: 1.5rem;
+    color: #1565C0;
+    margin-top: 15px;
+}
+
+/* Navigation Menu */
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    background: #1E88E5;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+.section {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Images */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+}
+
+/* Quote Box */
+.quote {
+    font-style: italic;
+    color: #555;
+    background: #f0f7ff;
+    padding: 15px;
+    border-left: 5px solid #1E88E5;
+    margin: 20px 0;
+}
+
+/* Lists */
+ul {
+    padding-left: 20px;
+}
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #1E88E5;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease-in-out;
+}
+.back-to-top:hover {
+    background: #1565C0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links a {
+        margin: 5px 0;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    .back-to-top {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+}
