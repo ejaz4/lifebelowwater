@@ -57,7 +57,7 @@ const loadHeader = async () => {
 
 		for (let link of links) {
 			const href = link.getAttribute("href");
-			if (href === currentPath) {
+			if (`/${href}` === currentPath) {
 				link.classList.add("current-page");
 			}
 		}
