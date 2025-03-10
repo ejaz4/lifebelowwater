@@ -33,16 +33,6 @@
 	font-size: 48px;
 }
 
-/* .table-container {
-	display: flex;
-	gap: 20px;
-	align-items: stretch;
-}
-
-.table-container > div {
-	width: 100%;
-} */
-
 body {
 	background-color: rgba(0, 136, 255, 1);
 }
@@ -50,118 +40,6 @@ body {
 main {
 	font-family: "Inter Tight", sans-serif;
 }
-
-/* .table {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-table {
-	background-color: rgba(147, 185, 218, 1);
-	border: 2px solid rgba(0, 0, 0, 1);
-	border-radius: 10px;
-	padding: 5px;
-	border-style: groove;
-	width: 100%;
-	height: 100%;
-	color: rgba(249, 246, 238, 1);
-}
-
-th,
-td {
-	padding: 10px;
-	text-align: left;
-} */
-
-/* button {
-	background-color: rgba(0, 136, 255, 1);
-	color: rgba(249, 246, 238, 1);
-	border: 2px solid rgba(0, 0, 0, 1);
-	border-style: groove;
-	padding: 8px 12px;
-	cursor: pointer;
-	border-radius: 10px;
-}
-
-button:hover {
-	background-color: rgba(181, 195, 209, 1);
-	color: rgba(0, 0, 0, 1);
-} */
-
-/* details {
-	padding-top: 20px;
-	text-align: left;
-}
-
-.rootMain {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-@media only screen and (max-width: 647px) {
-	.table-container {
-		flex-direction: column;
-	}
-}
-
-.image-container img {
-	width: 100%;
-	height: 200px;
-	object-fit: cover;
-	border-radius: 10px;
-}
-
-.feedback-container {
-	display: flex;
-	gap: 20px;
-	width: 100%;
-	flex-wrap: wrap;
-}
-
-.feedback-table-container {
-	gap: 20px;
-}
-
-.rating-container {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-}
-
-.review {
-	width: 300px;
-	gap: 20px;
-	border: 2px solid rgba(0, 0, 0, 1);
-	border-radius: 10px;
-	padding: 8px 12px;
-	background-color: rgba(147, 185, 218, 1);
-	color: rgba(249, 246, 238, 1);
-	display: flex;
-	flex-direction: column;
-}
-
-.button-container {
-	display: flex;
-	gap: 20px;
-}
-
-.feedback-button {
-	width: fit-content;
-}
-
-.feedback-textarea {
-	width: 50%;
-}
-
-h2:hover {
-	color: rgba(160, 214, 180, 1);
-} */
-
-/* h3:hover {
-	color: rgba(0, 136, 255, 0.9);
-} */
 
 ol,
 ul,
@@ -173,7 +51,9 @@ a {
 }
 
 h2,
-h3 {
+h3,
+h4,
+h5 {
 	color: rgba(249, 246, 238, 1);
 	padding: 10px;
 }
