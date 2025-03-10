@@ -1,5 +1,6 @@
 .rootMain {
 	display: flex;
+	position: relative;
 	flex-direction: row;
 	gap: 32px;
 	justify-content: center;
@@ -24,6 +25,14 @@
 }
 
 .navigation {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	position: sticky;
+	top: 160px;
+}
+
+.navigation .links {
 	background-color: rgba(0, 136, 255, 0.2);
 	border-radius: 8px;
 	display: flex;

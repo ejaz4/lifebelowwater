@@ -29,13 +29,13 @@ const toggleHamburger = () => {
 
 const loadHeader = async () => {
 	document.body.style.display = "none";
-	const fetchHeader = await fetch("/components/header.html");
-	const header = await fetchHeader.text();
-	const headerElem = document.createElement("header");
+	// const fetchHeader = await fetch("/components/header.html");
+	// const header = await fetchHeader.text();
+	// const headerElem = document.createElement("header");
 
-	headerElem.innerHTML = header;
+	// headerElem.innerHTML = header;
 
-	document.body.prepend(headerElem);
+	// document.body.prepend(headerElem);
 
 	window.onscroll = () => {
 		const header = document.querySelector("header");
@@ -57,7 +57,8 @@ const loadHeader = async () => {
 
 		for (let link of links) {
 			const href = link.getAttribute("href");
-			if (`/${href}` === currentPath) {
+			console.log(href, currentPath);
+			if (currentPath.endsWith(href)) {
 				link.classList.add("current-page");
 			}
 		}
@@ -71,16 +72,16 @@ const loadHeader = async () => {
 	highlightCurrentPage();
 };
 
-const loadFooter = async () => {
-	document.body.style.display = "none";
-	const fetchFooter = await fetch("/components/footer.html");
-	const footer = await fetchFooter.text();
-	const footerElem = document.createElement("footer");
+// const loadFooter = async () => {
+// 	document.body.style.display = "none";
+// 	const fetchFooter = await fetch("/components/footer.html");
+// 	const footer = await fetchFooter.text();
+// 	const footerElem = document.createElement("footer");
 
-	footerElem.innerHTML = footer;
+// 	footerElem.innerHTML = footer;
 
-	document.body.appendChild(footerElem);
-};
+// 	document.body.appendChild(footerElem);
+// };
 
 loadHeader();
-loadFooter();
+// loadFooter();
