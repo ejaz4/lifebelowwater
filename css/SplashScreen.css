@@ -9,7 +9,6 @@ body {
 }
 
 .video-splashscreen video {
-	/* width: 100vw; */
 	min-width: 100vw;
 	height: 100vh;
 	position: absolute;

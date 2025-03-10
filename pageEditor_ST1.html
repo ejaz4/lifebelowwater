@@ -128,9 +128,113 @@
 				<section id="section1">
 					<h2>Splash screen</h2>
 					<h3>Technical Description</h3>
-					<p></p>
+					<p>
+						The splashScreen.html file is designed as a splash
+						screen that plays a background video while displaying
+						the organization's name, mission statement, and a list
+						of contributors. The page automatically redirects to
+						home.html after 4 seconds.
+					</p>
+					<h4>Key features</h4>
+					<h5>Structured Content</h5>
+					<ul>
+						<li>
+							Header: Displays the title “SeaGate” with a tagline
+						</li>
+						<li>
+							Logo: A visually prominent SVG image
+							(/images/logo-filled-negative.svg)
+						</li>
+						<li>
+							Organization Mission Statement: Provides details
+							about the UK-based charity’s goal
+						</li>
+						<li>Group Member List: Acknowledges contributors</li>
+						<li>
+							Animated Loading Indicator
+							<ul>
+								<li>
+									Uses three animated circles (div.circle) to
+									indicate page loading
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<h4>Auto-Redirect</h4>
+					<ul>
+						<li>
+							meta http-equiv="refresh" content="4; url=home.html"
+							Redirects to home.html after 4 seconds
+						</li>
+					</ul>
+					<h4>div.circle</h4>
+					<p>
+						Each div class="circle" represents a small bouncing
+						circle in the loader animation
+					</p>
+					<h4>How it works</h4>
+					<h5>display: flex; in .loader</h5>
+					<ul>
+						<li>
+							Aligns the three circles horizontally
+							(justify-content: center;)
+						</li>
+						<li>Adds spacing between them (gap: 20px;)</li>
+						<li>
+							Aligns them at the bottom of the container
+							(align-items: flex-end;)
+						</li>
+					</ul>
+					<h5>.circle Styles</h5>
+					<ul>
+						<li>
+							Shape: border-radius: 50%; to make them circular
+						</li>
+						<li>
+							Animation: animation: moveUpAndDown 2s ease
+							infinite; (applies the bouncing effect)
+						</li>
+					</ul>
+					<h5>Bouncing Animation (@keyframes moveUpAndDown)</h5>
+					<ul>
+						<li>
+							0% and 100%: The circles remain at their original
+							position
+						</li>
+						<li>
+							50%: The circles move 50px upwards
+							(translateY(-50px);)
+						</li>
+						<li>The movement creates a bouncing effect</li>
+					</ul>
+					<h5>Animation Delays</h5>
+					<ul>
+						<li>The 2nd circle starts 0.5 seconds later</li>
+						<li>The 3rd circle starts 1 second later</li>
+						<li>
+							This staggered timing creates a wave-like bouncing
+							effect instead of all circles jumping together
+						</li>
+					</ul>
 					<h3>Accessibility</h3>
-					<p></p>
+					<h4>Semantic HTML</h4>
+					<ul>
+						<li>Uses h1, h2, h3, p, and img appropriately</li>
+					</ul>
+					<h4>Color Contrast & Readability</h4>
+					<ul>
+						<li>
+							The dark overlay (rgba(0, 0, 0, 0.5)) ensures text
+							remains readable against the video
+						</li>
+					</ul>
+					<h4>Keyboard & Screen Reader Navigation</h4>
+					<ul>
+						<li>
+							Content is structured logically with clear heading
+							levels
+						</li>
+					</ul>
 					<h3>Links</h3>
 					<ul>
 						<li><a href="splashScreen.html">Splash screen</a></li>
@@ -140,9 +244,87 @@
 				<section id="section2">
 					<h2>Volunteer</h2>
 					<h3>Technical Description</h3>
-					<p></p>
+					<h4>Structured Content</h4>
+					<ul>
+						<li>Video</li>
+						<li>Charity projects</li>
+						<li>feedback and reviews</li>
+					</ul>
+					<h4>Video</h4>
+					<ul>
+						<li>
+							Uses a video element with autoplay, loop, muted, and
+							playsinline attributes.
+						</li>
+						<li>
+							Video is positioned using CSS (video-volunteer
+							class).
+						</li>
+					</ul>
+					<p>
+						Display: flex is used to position the video so it stays
+						at the top and moves with the size of the tab.
+						justify-content: center and align-items: center are used
+						to center text into the middle of the video.
+					</p>
+					<h4>Volunteering Projects Section</h4>
+					<ul>
+						<li>Contains multiple <table> elements within .table-container, listing different volunteer projects</li>
+						<li>Each table consists of: <ul>
+							<li>Project title (th)</li>
+							<li>Project description (td)</li>
+							<li>Project images (img elements inside .image-container)</li>
+							<li>Project duration and requirements (ul li)</li>
+							<li>"Apply" button (button)</li>
+						</ul></li>
+					</ul>
+					<h4>Expandable Details Section</h4>
+					<ul>
+						<li>Uses details and summary for two additional projects</li>
+					</ul>
+					<h4>Feedback and Rating Section</h4>
+					<ul>
+						<li>Displays volunteer ratings (h2 with rating score)</li>
+						<li>Includes user recent reviews and total amount of reviews (.review containers)</li>
+						<li>Feedback form with a textarea for user suggestions</li>
+					</ul>
+					<h4>Background & Typography</h4>
+					<ul>
+						<li>Uses Inter Tight font for the main content</li>
+						<li>Background color is rgba(0, 136, 255, 1), a blue shade</li>
+					</ul>
+					<h4>Tables and Layout</h4>
+					<ul>
+						<li>.table-container uses display: flex; for a side-by-side table layout (desktop)</li>
+						<li>@media (max-width: 647px) changes .table-container to a column layout for mobile</li>
+					</ul>
+					<h4>Buttons</h4>
+					<ul>
+						<li>.button has a groove border, rounded corners, and changes color on :hover</li>
+					</ul>
 					<h3>Accessibility</h3>
-					<p></p>
+					<h4>Semantic HTML</h4>
+					<ul>
+						<li>header, main, and section tags used for logical structure</li>
+						<li>label is used for select elements</li>
+						<li>details and summary enhance usability</li>
+					</ul>
+					<h4>Text and Contrast</h4>
+					<ul>
+						<li>Most text elements (h1, h2, p, label, summary) use high-contrast colors (rgba(249, 246, 238, 1) on blue background)</li>
+					</ul>
+					<h4>Forms and Input Accessibility</h4>
+					<ul>
+						<li>textarea includes: <ul>
+							<li>maxlength="200"</li>
+							<li>placeholder for guidance</li>
+							<li>oninvalid="this.setCustomValidity('Please don't leave this area blank')"</li>
+						</ul></li>
+					</ul>
+					<h4>Responsive Design</h4>
+					<ul>
+						<li>Uses flexbox and media queries to adapt the layout for smaller screens</li>
+					</ul>
 					<h3>Links</h3>
 					<ul>
 						<li><a href="volunteer.html">Volunteer</a></li>
@@ -152,9 +334,55 @@
 				<section id="section3">
 					<h2>Content Page</h2>
 					<h3>Technical Description</h3>
-					<p></p>
+					<h4>Structured Content</h4>
+					<ul>
+						<li>video</li>
+						<li>Blog topics</li>
+						<li>sidebar</li>
+						<li>Back to top button</li>
+					</ul>
+					<h4>Blog topics</h4>
+					<ul>
+						<li>Structured with headings, images, and descriptive paragraphs/points about plastic pollution</li>
+						<li>Sections use appropriate HTML elements (section, h3, p, ol, ul) for semantic clarity</li>
+						<li>Flexbox is used for responsive and flexible layouts</li>
+						<li>Images are styled to fit well within the content and maintain visual appeal</li>
+					</ul>
+					<h4>Sidebar (Aside)</h4>
+					<ul>
+						<li>Contains navigational links to various sections of the page</li>
+						<li>Ensures easier navigation with a sticky positioning for better visibility</li>
+						<li>The sidebar is sticky, ensuring it's always visible when scrolling</li>
+						<li>Navigation links have sufficient padding and visual clarity</li>
+					</ul>
+					<h4>Back to top</h4>
+					<ul>
+						<li>An accessible anchor that allows users to return to the top of the page</li>
+						<li>Fixed positioning ensures it's always accessible at the bottom-right of the viewport</li>
+						<li>Styled for visibility with borders and padding</li>
+					</ul>
 					<h3>Accessibility</h3>
-					<p></p>
+					<h4>Semantic HTML</h4>
+					<ul>
+						<li>Uses proper semantic tags like section, aside, main, and nav to improve screen reader navigation</li>
+					</ul>
+					<h4>Alt Text</h4>
+					<ul>
+						<li>All images include descriptive alt attributes, aiding visually impaired users</li>
+					</ul>
+					<h4>Navigation</h4>
+					<ul>
+						<li>Sidebar links provide clear and direct access to different content sections</li>
+						<li>"Back to Top" button enhances navigation, especially for long pages</li>
+					</ul>
+					<h4>Color Contrast</h4>
+					<ul>
+						<li>The text and background color choices offer sufficient contrast for readability, aligning with WCAG guidelines</li>
+					</ul>
+					<h4>Responsive Design</h4>
+					<ul>
+						<li>The layout is flexible and adjusts well to different screen sizes, ensuring accessibility across devices</li>
+					</ul>
 					<h3>Links</h3>
 					<ul>
 						<li><a href="content.html">Content Page</a></li>
@@ -163,10 +391,7 @@
 				</section>
 				<section id="section4">
 					<h2>Challenges and Lessons Learned</h2>
-					<h3>Technical Description</h3>
-					<p></p>
-					<h3>Accessibility</h3>
-					<p></p>
+					<p>My main challenge while developing these pages was implementing flexbox, this was mostly due to it being my first time utilizing it into my code. However in the end I believe the struggle was worth it in the end due to me enjoying the learning experience and it allowing for a user friendly design. Another challenge was with the animated loader on the splash screen, this was because my original plan for this feature was to use a gif but in this use case. To overcome this I used 3 divs called circle which I animated using some css. My final challenge was finding a color scheme that fit the theme of the topic (life below water). I decided on a dark blue for the background of my pages, a light blue for tables and similar items, bone white for text and a dark blue and bone white text for buttons then a light gray and black text for when hovering over.</p>
 				</section>
 				<section id="section5">
 					<h2>Compliance</h2>
@@ -182,11 +407,20 @@
 				</section>
 				<section id="section6">
 					<h2>References</h2>
-					<p>
-						Pexels (2024). Free stock photos · Pexels. [online]
-						Pexels.com. Available at:
-						<a href="/www.pexels.com">https://www.pexels.com</a>
-					</p>
+					<ul>
+						<li>Pexels (2024). Free stock photos · Pexels. [online]
+							Pexels.com. Available at:
+							<a href="/www.pexels.com">https://www.pexels.com</a>
+						</li>
+						<li>
+							CSS-Tricks. (2019). CSS-Tricks. [online] 
+							Available at: 
+							<a href="https://css-tricks.com">https://css-tricks.com</a>.
+						‌</li>
+					</ul>
+						
+
+
 				</section>
 			</div>
 		</main>
