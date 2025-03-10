@@ -1,18 +1,14 @@
-<!DOCTYPE html>
+
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Seasweep</title>
 
-		<!-- This is to preload the header to prevent cumulative layout shift: https://developer.mozilla.org/en-US/docs/Glossary/CLS -->
 		<link rel="preload" href="/js/global.js" as="script" />
 		<link rel="preload" href="/components/header.html" as="fetch" />
 
-		<!-- Mandatory link, this is for the global styles that is used by the header and everything else -->
 		<link rel="stylesheet" href="/css/style.css" />
-
-		<!-- Change /css/template.css to a new css file you've just made -->
 		<link rel="stylesheet" href="/css/template.css" />
 
 		<style>
@@ -21,12 +17,12 @@
 				font-family: Arial, sans-serif;
 				background-color: #f4f4f4;
 				margin: 0;
-				padding-bottom: 60px; /* Prevents content from overlapping footer */
+				padding-bottom: 60px; 
 			}
 
 			svg {
 				width: 100%;
-				max-width: 800px;
+				max-width: 1400px;
 				height: auto;
 			}
 
@@ -49,7 +45,7 @@
 				outline: none;
 			}
 
-			text {
+			.text-label {
 				font-size: 14px;
 				font-weight: bold;
 				fill: white;
@@ -58,104 +54,112 @@
 		</style>
 	</head>
 	<body>
-		<!-- WAIT: DON'T WORRY IF YOUR CONTENT DOESN'T SPAN THE WHOLE WIDTH OF THE DISPLAY MONITOR, THIS IS ON PURPOSE TO PUT THE CONTENT AT OPTIMAL VIEWING AND SO IT ADJUSTS WELL ON MOBILE -->
-		<!-- APOLOGIES AGAIN HEHE -->
 		<main class="rootMain">
-			<!-- Put your content here, the header should automatically appear -->
-
 			<h1>Website Sitemap</h1>
 
-			<svg viewBox="0 0 800 400">
-				<!-- Lines (connections from Home to child pages) -->
-				<line x1="400" y1="70" x2="200" y2="170" class="link" />
-				<line x1="400" y1="70" x2="300" y2="170" class="link" />
-				<line x1="400" y1="70" x2="400" y2="170" class="link" />
-				<line x1="400" y1="70" x2="500" y2="170" class="link" />
-				<line x1="400" y1="70" x2="600" y2="170" class="link" />
+			<svg viewBox="0 0 1400 950">
+				<!-- Lines (connections from Home to child pages) with increased spacing -->
+				<line x1="700" y1="70" x2="200" y2="250" class="link" />
+				<line x1="700" y1="70" x2="550" y2="250" class="link" />
+				<line x1="700" y1="70" x2="850" y2="250" class="link" />
+				<line x1="700" y1="70" x2="1200" y2="250" class="link" />
 
 				<!-- Main Home Node -->
 				<a xlink:href="home.html" tabindex="0">
-					<rect
-						x="370"
-						y="50"
-						width="60"
-						height="40"
-						rx="10"
-						ry="10"
-						class="node"
-					/>
-					<text x="400" y="75" text-anchor="middle">Home</text>
+					<rect x="670" y="50" width="60" height="40" rx="10" ry="10" class="node" />
+					<text x="700" y="75" text-anchor="middle" class="text-label">Home</text>
 				</a>
 
-				<!-- Child Nodes (evenly spaced) -->
+				<!-- Child Nodes with Even Wider Spacing -->
 				<a xlink:href="volunteer.html" tabindex="0">
-					<rect
-						x="160"
-						y="150"
-						width="100"
-						height="40"
-						rx="10"
-						ry="10"
-						class="node"
-					/>
-					<text x="210" y="175" text-anchor="middle">Volunteer</text>
+					<rect x="150" y="230" width="120" height="40" rx="10" ry="10" class="node" />
+					<text x="210" y="255" text-anchor="middle" class="text-label">Volunteer</text>
 				</a>
 
 				<a xlink:href="feedback.html" tabindex="0">
-					<rect
-						x="260"
-						y="150"
-						width="100"
-						height="40"
-						rx="10"
-						ry="10"
-						class="node"
-					/>
-					<text x="310" y="175" text-anchor="middle">Feedback</text>
+					<rect x="500" y="230" width="120" height="40" rx="10" ry="10" class="node" />
+					<text x="560" y="255" text-anchor="middle" class="text-label">Feedback</text>
 				</a>
 
 				<a xlink:href="team.html" tabindex="0">
-					<rect
-						x="360"
-						y="150"
-						width="100"
-						height="40"
-						rx="10"
-						ry="10"
-						class="node"
-					/>
-					<text x="410" y="175" text-anchor="middle">Team</text>
+					<rect x="850" y="230" width="120" height="40" rx="10" ry="10" class="node" />
+					<text x="910" y="255" text-anchor="middle" class="text-label">Team</text>
 				</a>
 
-				<a xlink:href="user.html" tabindex="0">
-					<rect
-						x="460"
-						y="150"
-						width="100"
-						height="40"
-						rx="10"
-						ry="10"
-						class="node"
-					/>
-					<text x="510" y="175" text-anchor="middle">Profile</text>
+				<a xlink:href="profile.html" tabindex="0">
+					<rect x="1200" y="230" width="120" height="40" rx="10" ry="10" class="node" />
+					<text x="1260" y="255" text-anchor="middle" class="text-label">Profile</text>
 				</a>
 
-				<a xlink:href="table.html" tabindex="0">
-					<rect
-						x="560"
-						y="150"
-						width="100"
-						height="40"
-						rx="10"
-						ry="10"
-						class="node"
-					/>
-					<text x="610" y="175" text-anchor="middle">Table</text>
+				<!-- Content Pages under Volunteer -->
+				<line x1="140" y1="270" x2="140" y2="550" class="link" />
+				<a xlink:href="content_ST1.html" tabindex="0">
+					<rect x="100" y="300" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="140" y="325" text-anchor="middle" class="text-label">Content 1</text>
+				</a>
+
+				<a xlink:href="content_ST2.html" tabindex="0">
+					<rect x="100" y="370" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="140" y="395" text-anchor="middle" class="text-label">Content2</text>
+				</a>
+
+				<a xlink:href="content_ST3.html" tabindex="0">
+					<rect x="100" y="440" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="140" y="465" text-anchor="middle" class="text-label">Content3</text>
+				</a>
+
+				<a xlink:href="content_ST4.html" tabindex="0">
+					<rect x="100" y="510" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="140" y="535" text-anchor="middle" class="text-label">Content4</text>
+				</a>
+
+				<!-- Page Editors under Volunteer -->
+				<line x1="240" y1="270" x2="240" y2="550" class="link" />
+				<a xlink:href="pageEditor_ST1.html" tabindex="0">
+					<rect x="200" y="300" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="240" y="325" text-anchor="middle" class="text-label">Editor ST1</text>
+				</a>
+
+				<a xlink:href="pageEditor_ST2.html" tabindex="0">
+					<rect x="200" y="370" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="240" y="395" text-anchor="middle" class="text-label">Editor ST2</text>
+				</a>
+
+				<a xlink:href="pageEditor_ST3.html" tabindex="0">
+					<rect x="200" y="440" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="240" y="465" text-anchor="middle" class="text-label">Editor ST3</text>
+				</a>
+
+				<a xlink:href="pageEditor_ST4.html" tabindex="0">
+					<rect x="200" y="510" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="240" y="535" text-anchor="middle" class="text-label">Editor ST4</text>
+				</a>
+
+				<!-- Validation Nodes under Volunteer (Right of Editor) -->
+				<line x1="340" y1="270" x2="340" y2="550" class="link" />
+				<a xlink:href="validation_ST1.html" tabindex="0">
+					<rect x="300" y="300" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="340" y="325" text-anchor="middle" class="text-label">Valid1</text>
+				</a>
+
+				<a xlink:href="validation_ST2.html" tabindex="0">
+					<rect x="300" y="370" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="340" y="395" text-anchor="middle" class="text-label">Valid2</text>
+				</a>
+
+				<a xlink:href="validation_ST3.html" tabindex="0">
+					<rect x="300" y="440" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="340" y="465" text-anchor="middle" class="text-label">Valid3</text>
+				</a>
+
+				<a xlink:href="validation_ST4.html" tabindex="0">
+					<rect x="300" y="510" width="80" height="40" rx="10" ry="10" class="node" />
+					<text x="340" y="535" text-anchor="middle" class="text-label">Valid4</text>
 				</a>
 			</svg>
 		</main>
 
-		<!-- Mandatory script to keep here, this is to keep the header operational -->
 		<script src="/js/global.js"></script>
 	</body>
 </html>
+"""
