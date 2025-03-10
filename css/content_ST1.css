@@ -220,6 +220,7 @@ aside {
 	flex-direction: row;
 	width: 100%;
 	padding: 0%;
+	gap: 10px;
 }
 
 .start > div {
