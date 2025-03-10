@@ -1,0 +1,44 @@
+.rootMain {
+	display: flex;
+	flex-direction: row;
+	gap: 32px;
+	justify-content: center;
+	align-items: flex-start;
+}
+
+.readable {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 700px;
+	max-width: 100%;
+}
+
+.readable h1 {
+	font-size: 36px;
+}
+
+.readable img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.navigation {
+	background-color: rgba(0, 136, 255, 0.2);
+	border-radius: 8px;
+	display: flex;
+	width: 250px;
+	gap: 16px;
+	flex-direction: column;
+	padding: 16px;
+}
+
+@media only screen and (max-width: 700px) {
+	.rootMain {
+		flex-direction: column;
+	}
+
+	.navigation {
+		display: none;
+	}
+}

@@ -27,7 +27,7 @@ p {
     margin-right: 200px;
 }
 
-#section2 li {
+#section2 li, #section3 li, #section4 li {
     text-align: center;
     font-size: 22px;
     margin-left: 200px;
@@ -87,9 +87,10 @@ main img {
     background-color: red;
     padding: 10px;
     position: fixed;
-    right: 5%;
+    right: 1%;
     bottom: 5%;
     border-radius: 20px;
+    margin: 0;
 }
 
 

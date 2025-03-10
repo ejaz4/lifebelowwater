@@ -366,3 +366,20 @@ footer h6 {
 		display: none;
 	}
 }
+
+.readable {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	width: 700px;
+	max-width: 100%;
+}
+
+.readable h1 {
+	font-size: 36px;
+}
+
+.readable img {
+	width: 100%;
+	border-radius: 4px;
+}
