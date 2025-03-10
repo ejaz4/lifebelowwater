@@ -1,0 +1,104 @@
+.hero {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+.hero img {
+	width: 400px;
+	max-width: 100%;
+}
+
+.rootMain {
+	display: flex;
+	flex-direction: column;
+	gap: 32px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.readable {
+	width: 700px;
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.readable > div {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.readable h1 {
+	font-size: 36px;
+}
+
+.donationplan {
+	border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+	transform: translateY(0px);
+	transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.donationplan:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.donationplan,
+.donationplan tr,
+.donationplan th,
+.donationplan td {
+	border-collapse: collapse;
+}
+
+.donationplan tr:first-child th:first-child {
+	border-top-left-radius: 8px;
+}
+.donationplan tr:first-child th:last-child {
+	border-top-right-radius: 8px;
+}
+
+.donationplan tr:last-child th:first-child {
+	border-bottom-left-radius: 8px;
+}
+
+.donationplan tr:last-child td:last-child {
+	border-bottom-right-radius: 8px;
+}
+
+.donationplan th {
+	background-color: rgba(0, 0, 0, 0.05);
+	text-align: right;
+	padding: 8px;
+}
+
+.donationplan tr:nth-child(odd) td {
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.donationplan tr:first-child th {
+	text-align: center;
+}
+
+.donationplan td {
+	text-align: center;
+	padding: 8px;
+}
+
+.donationplan td > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 8px;
+}
+
+.donationplan td img {
+	width: 24px;
+}
