@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Seasweep</title>
+		<title>pageEditor_ST1</title>
 
 		<!-- This is to preload the header to prevent cumulative layout shift: https://developer.mozilla.org/en-US/docs/Glossary/CLS -->
 		<link rel="preload" href="/js/global.js" as="script" />
@@ -13,16 +13,116 @@
 		<link rel="stylesheet" href="/css/style.css" />
 
 		<!-- Change /css/template.css to a new css file you've just made -->
-		<link rel="stylesheet" href="/css/template.css" />
+		<link rel="stylesheet" href="/css/pageEditor_ST1.css" />
 	</head>
 	<body>
 		<!-- WAIT: DON'T WORRY IF YOUR CONTENT DOESN'T SPAN THE WHOLE WIDTH OF THE DISPLAY MONITOR, THIS IS ON PURPOSE TO PUT THE CONTENT AT OPTIMAL VIEWING AND SO IT ADJUSTS WELL ON MOBILE -->
 		<!-- APOLOGIES AGAIN HEHE -->
-		<main class="rootMain">
+		<section class="video-pageEditor">
+			<video
+				autoplay
+				loop
+				muted
+				playsinline
+				src="/videos/pageEditor_ST1.mp4"
+			></video>
+			<div class="content-constraint">
+				<div class="content">
+					<h1>Student 1</h1>
+					<h1>Theoayman Haid De Azevedo</h1>
+				</div>
+			</div>
+		</section>
+		<main class="rootMain start">
 			<!-- Put your content here, the header should automatically appear -->
-
-			<h1>Your content here!</h1>
-			<p>Replace us fr!</p>
+			<a href="#top"><p class="backToTop">Back to top</p></a>
+			<aside>
+				<div class="sidebar">
+					<ul class="sectionLinks">
+						<li>
+							<a href="#section1">Splash Screen</a>
+						</li>
+						<li>
+							<a href="#section2">Volunteer</a>
+						</li>
+						<li><a href="#section3">Content Page</a></li>
+						<li>
+							<a href="#section4"
+								>Challenges and Lessons Learned</a
+							>
+						</li>
+						<li>
+							<a href="#section5">Compliance</a>
+						</li>
+						<li><a href="#section6">References</a></li>
+					</ul>
+				</div>
+			</aside>
+			<div>
+				<section id="section1">
+					<h2>Splash screen</h2>
+					<h3>Technical Description</h3>
+					<p></p>
+					<h3>Accessibility</h3>
+					<p></p>
+					<h3>Links</h3>
+					<ul>
+						<li><a href="splashScreen.html">Splash screen</a></li>
+						<li><a href="validation_ST1.html">Validation</a></li>
+					</ul>
+				</section>
+				<section id="section2">
+					<h2>Volunteer</h2>
+					<h3>Technical Description</h3>
+					<p></p>
+					<h3>Accessibility</h3>
+					<p></p>
+					<h3>Links</h3>
+					<ul>
+						<li><a href="volunteer.html">Volunteer</a></li>
+						<li><a href="validation_ST1.html">Validation</a></li>
+					</ul>
+				</section>
+				<section id="section3">
+					<h2>Content Page</h2>
+					<h3>Technical Description</h3>
+					<p></p>
+					<h3>Accessibility</h3>
+					<p></p>
+					<h3>Links</h3>
+					<ul>
+						<li><a href="content.html">Content Page</a></li>
+						<li><a href="validation_ST1.html">Validation</a></li>
+					</ul>
+				</section>
+				<section id="section4">
+					<h2>Challenges and Lessons Learned</h2>
+					<h3>Technical Description</h3>
+					<p></p>
+					<h3>Accessibility</h3>
+					<p></p>
+				</section>
+				<section id="section5">
+					<h2>Compliance</h2>
+					<p>
+						All webpages created contain only appropriate content,
+						and any images of people are used with their consent. No
+						unauthorized access to services or facilities is
+						provided. The site does not feature any advertisements.
+						While most videos come from free stock footage sources,
+						some images may unintentionally infringe on copyright as
+						they were sourced from the internet.
+					</p>
+				</section>
+				<section id="section6">
+					<h2>References</h2>
+					<p>
+						Pexels (2024). Free stock photos · Pexels. [online]
+						Pexels.com. Available at:
+						<a href="//www.pexels.com">https://www.pexels.com</a>
+					</p>
+				</section>
+			</div>
 		</main>
 
 		<!-- Mandatory script to keep here, this is to keep the header operational -->
