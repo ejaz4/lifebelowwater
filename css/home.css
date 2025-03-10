@@ -150,6 +150,10 @@ tbody {
 	text-align: center;
 }
 
+.introduction-text h2 {
+	text-align: center;
+}
+
 .introduction-text p {
 	font-size: 18px;
 	text-align: center;
@@ -164,6 +168,49 @@ tbody {
 	gap: 64px;
 }
 
+.feature {
+	min-width: 400px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 16px;
+	padding: 32px;
+	box-sizing: border-box;
+	border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+	transform: translateY(0px);
+
+	scroll-snap-align: start;
+	transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.feature-showcase {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	text-align: center;
+	gap: 16px;
+}
+
+.feature:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 1500px) {
+	.feature-showcase {
+		display: flex;
+		width: 100%;
+		overflow-x: auto;
+		padding: 16px;
+		justify-content: flex-start;
+		text-align: center;
+		gap: 16px;
+		scroll-snap-type: x mandatory;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	.introduction-hero {
 		padding-top: 64px;
@@ -174,4 +221,55 @@ tbody {
 		width: 100%;
 		padding: 0 16px;
 	}
+}
+
+.block {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.caro {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: stretch;
+	gap: 16px;
+}
+
+.caro a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.post {
+	border-radius: 8px;
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	/* gap: 8px; */
+	width: 350px;
+	transform: translateY(0px);
+	overflow: hidden;
+	transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.post:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.post img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.postInfo {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+	padding: 16px;
 }

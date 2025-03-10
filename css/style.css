@@ -239,6 +239,10 @@ button:hover,
 		top: 81px;
 		border-bottom: solid 1px rgba(255, 255, 255, 0.2);
 	}
+
+	.footer-ls {
+		display: none;
+	}
 }
 
 .rootMain {
@@ -355,4 +359,10 @@ footer h6 {
 .footer-rs {
 	display: flex;
 	gap: 32px;
+}
+
+@media only screen and (max-width: 600px) {
+	.footer-ls {
+		display: none;
+	}
 }
